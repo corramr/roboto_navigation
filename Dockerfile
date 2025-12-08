@@ -1,5 +1,5 @@
 # pull from base image
-FROM corra09/nav2_docker:master
+FROM corra09/nav2_docker:dev
 
 
 # copy application code
