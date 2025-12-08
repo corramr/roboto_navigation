@@ -1,0 +1,562 @@
+[0.000000] (-) TimerEvent: {}
+[0.000356] (livox_ros_driver2) JobQueued: {'identifier': 'livox_ros_driver2', 'dependencies': OrderedDict()}
+[0.000393] (livox_ros_driver2) JobStarted: {'identifier': 'livox_ros_driver2'}
+[0.013746] (livox_ros_driver2) JobProgress: {'identifier': 'livox_ros_driver2', 'progress': 'cmake'}
+[0.014158] (livox_ros_driver2) Command: {'cmd': ['/usr/bin/cmake', '/root/nav2_ws/src/ws_livox/src/livox_ros_driver2', '-DROS_EDITION=ROS2', '-DHUMBLE_ROS=humble', '-DCMAKE_INSTALL_PREFIX=/root/nav2_ws/src/ws_livox/install/livox_ros_driver2'], 'cwd': '/root/nav2_ws/src/ws_livox/build/livox_ros_driver2', 'env': OrderedDict([('HOSTNAME', 'corra-IdeaPad-3-15IIL05'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/root/nav2_ws/src/ws_livox/install/livox_ros_driver2/lib:/root/nav2_ws/install/pointcloud_to_laserscan/lib:/root/nav2_ws/install/nav2_smoother/lib:/root/nav2_ws/install/nav2_rotation_shim_controller/lib:/root/nav2_ws/install/nav2_graceful_controller/lib:/root/nav2_ws/install/nav2_controller/lib:/root/nav2_ws/install/dwb_plugins/lib:/root/nav2_ws/install/dwb_critics/lib:/root/nav2_ws/install/dwb_core/lib:/root/nav2_ws/install/nav_2d_utils/lib:/root/nav2_ws/install/dwb_msgs/lib:/root/nav2_ws/install/nav_2d_msgs/lib:/root/nav2_ws/install/nav2_waypoint_follower/lib:/root/nav2_ws/install/nav2_theta_star_planner/lib:/root/nav2_ws/install/nav2_smac_planner/lib:/root/nav2_ws/install/nav2_route/lib:/root/nav2_ws/install/nav2_regulated_pure_pursuit_controller/lib:/root/nav2_ws/install/nav2_planner/lib:/root/nav2_ws/install/nav2_navfn_planner/lib:/root/nav2_ws/install/nav2_mppi_controller/lib:/root/nav2_ws/install/nav2_constrained_smoother/lib:/root/nav2_ws/install/nav2_bt_navigator/lib:/root/nav2_ws/install/nav2_behaviors/lib:/root/nav2_ws/install/nav2_collision_monitor/lib:/root/nav2_ws/install/costmap_queue/lib:/root/nav2_ws/install/nav2_costmap_2d/lib:/root/nav2_ws/install/nav2_voxel_grid/lib:/root/nav2_ws/install/nav2_velocity_smoother/lib:/root/nav2_ws/install/nav2_rviz_plugins/lib:/root/nav2_ws/install/nav2_map_server/lib:/root/nav2_ws/install/nav2_lifecycle_manager/lib:/root/nav2_ws/install/nav2_behavior_tree/lib:/root/nav2_ws/install/nav2_amcl/lib:/root/nav2_ws/install/nav2_util/lib:/root/nav2_ws/install/nav2_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib:/usr/local/lib'), ('HOME', '/root'), ('OLDPWD', '/root/nav2_ws/src/ws_livox/src/livox_ros_driver2'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/root/nav2_ws/install:/root/nav2_ws/src/ws_livox/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', 'ROS2'), ('TERM', 'xterm'), ('GAZEBO_MODEL_PATH', ':/root/initialize/tb3_gazebo_models:/root/initialize/tb3_gazebo_models:/root/initialize/tb3_gazebo_models'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/root/nav2_ws/src/ws_livox/install/livox_ros_driver2:/root/nav2_ws/install/sensor_launcher:/root/nav2_ws/install/unitree_lidar_ros2:/root/nav2_ws/install/pointcloud_to_laserscan:/root/nav2_ws/install/nav2_system_tests:/root/nav2_ws/install/nav2_bringup:/root/nav2_ws/install/navigation2:/root/nav2_ws/install/nav2_smoother:/root/nav2_ws/install/nav2_rotation_shim_controller:/root/nav2_ws/install/nav2_graceful_controller:/root/nav2_ws/install/nav2_dwb_controller:/root/nav2_ws/install/nav2_controller:/root/nav2_ws/install/dwb_plugins:/root/nav2_ws/install/dwb_critics:/root/nav2_ws/install/dwb_core:/root/nav2_ws/install/nav_2d_utils:/root/nav2_ws/install/dwb_msgs:/root/nav2_ws/install/nav_2d_msgs:/root/nav2_ws/install/nav2_waypoint_follower:/root/nav2_ws/install/nav2_theta_star_planner:/root/nav2_ws/install/nav2_smac_planner:/root/nav2_ws/install/nav2_route:/root/nav2_ws/install/nav2_regulated_pure_pursuit_controller:/root/nav2_ws/install/nav2_planner:/root/nav2_ws/install/nav2_navfn_planner:/root/nav2_ws/install/nav2_mppi_controller:/root/nav2_ws/install/nav2_constrained_smoother:/root/nav2_ws/install/nav2_bt_navigator:/root/nav2_ws/install/nav2_behaviors:/root/nav2_ws/install/nav2_core:/root/nav2_ws/install/nav2_collision_monitor:/root/nav2_ws/install/costmap_queue:/root/nav2_ws/install/nav2_costmap_2d:/root/nav2_ws/install/nav2_voxel_grid:/root/nav2_ws/install/nav2_velocity_smoother:/root/nav2_ws/install/nav2_rviz_plugins:/root/nav2_ws/install/nav2_map_server:/root/nav2_ws/install/nav2_lifecycle_manager:/root/nav2_ws/install/nav2_behavior_tree:/root/nav2_ws/install/nav2_amcl:/root/nav2_ws/install/nav2_util:/root/nav2_ws/install/nav2_simple_commander:/root/nav2_ws/install/nav2_odom_to_tf:/root/nav2_ws/install/nav2_msgs:/root/nav2_ws/install/nav2_common:/root/nav2_ws/install/lidar_odometry:/opt/ros/humble'), ('PWD', '/root/nav2_ws/src/ws_livox/build/livox_ros_driver2'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/root/nav2_ws/src/ws_livox/install/livox_ros_driver2/local/lib/python3.10/dist-packages:/root/nav2_ws/install/sensor_launcher/lib/python3.10/site-packages:/root/nav2_ws/install/dwb_msgs/local/lib/python3.10/dist-packages:/root/nav2_ws/install/nav_2d_msgs/local/lib/python3.10/dist-packages:/root/nav2_ws/build/nav2_simple_commander:/root/nav2_ws/install/nav2_simple_commander/lib/python3.10/site-packages:/root/nav2_ws/install/nav2_odom_to_tf/lib/python3.10/site-packages:/root/nav2_ws/install/nav2_msgs/local/lib/python3.10/dist-packages:/root/nav2_ws/install/nav2_common/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/root/nav2_ws/src/ws_livox/install/livox_ros_driver2:/root/nav2_ws/install/unitree_lidar_ros2:/root/nav2_ws/install/pointcloud_to_laserscan:/root/nav2_ws/install/nav2_system_tests:/root/nav2_ws/install/nav2_bringup:/root/nav2_ws/install/navigation2:/root/nav2_ws/install/nav2_smoother:/root/nav2_ws/install/nav2_rotation_shim_controller:/root/nav2_ws/install/nav2_graceful_controller:/root/nav2_ws/install/nav2_dwb_controller:/root/nav2_ws/install/nav2_controller:/root/nav2_ws/install/dwb_plugins:/root/nav2_ws/install/dwb_critics:/root/nav2_ws/install/dwb_core:/root/nav2_ws/install/nav_2d_utils:/root/nav2_ws/install/dwb_msgs:/root/nav2_ws/install/nav_2d_msgs:/root/nav2_ws/install/nav2_waypoint_follower:/root/nav2_ws/install/nav2_theta_star_planner:/root/nav2_ws/install/nav2_smac_planner:/root/nav2_ws/install/nav2_route:/root/nav2_ws/install/nav2_regulated_pure_pursuit_controller:/root/nav2_ws/install/nav2_planner:/root/nav2_ws/install/nav2_navfn_planner:/root/nav2_ws/install/nav2_mppi_controller:/root/nav2_ws/install/nav2_constrained_smoother:/root/nav2_ws/install/nav2_bt_navigator:/root/nav2_ws/install/nav2_behaviors:/root/nav2_ws/install/nav2_core:/root/nav2_ws/install/nav2_collision_monitor:/root/nav2_ws/install/costmap_queue:/root/nav2_ws/install/nav2_costmap_2d:/root/nav2_ws/install/nav2_voxel_grid:/root/nav2_ws/install/nav2_velocity_smoother:/root/nav2_ws/install/nav2_rviz_plugins:/root/nav2_ws/install/nav2_map_server:/root/nav2_ws/install/nav2_lifecycle_manager:/root/nav2_ws/install/nav2_behavior_tree:/root/nav2_ws/install/nav2_amcl:/root/nav2_ws/install/nav2_util:/root/nav2_ws/install/nav2_msgs:/root/nav2_ws/install/nav2_common:/root/nav2_ws/install/lidar_odometry:/root/nav2_ws/install/sensor_launcher:/root/nav2_ws/install/nav2_simple_commander:/root/nav2_ws/install/nav2_odom_to_tf:/opt/ros/humble')]), 'shell': False}
+[0.079999] (livox_ros_driver2) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.099368] (-) TimerEvent: {}
+[0.138741] (livox_ros_driver2) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.146580] (livox_ros_driver2) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.199516] (-) TimerEvent: {}
+[0.232523] (livox_ros_driver2) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.238527] (livox_ros_driver2) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.238694] (livox_ros_driver2) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.239023] (livox_ros_driver2) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.241484] (livox_ros_driver2) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.299623] (-) TimerEvent: {}
+[0.332742] (livox_ros_driver2) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.338881] (livox_ros_driver2) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.339030] (livox_ros_driver2) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.339456] (livox_ros_driver2) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.340099] (livox_ros_driver2) StdoutLine: {'line': b'-- livox_ros_driver2 version: 1.2.4\n'}
+[0.345990] (livox_ros_driver2) StdoutLine: {'line': b'-- Found ament_cmake_auto: 1.3.12 (/opt/ros/humble/share/ament_cmake_auto/cmake)\n'}
+[0.399762] (-) TimerEvent: {}
+[0.500075] (-) TimerEvent: {}
+[0.504093] (livox_ros_driver2) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.600232] (-) TimerEvent: {}
+[0.700600] (-) TimerEvent: {}
+[0.707515] (livox_ros_driver2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.725347] (livox_ros_driver2) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.800765] (-) TimerEvent: {}
+[0.801674] (livox_ros_driver2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.900911] (-) TimerEvent: {}
+[0.956914] (livox_ros_driver2) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.964620] (livox_ros_driver2) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.001058] (-) TimerEvent: {}
+[1.101385] (-) TimerEvent: {}
+[1.106836] (livox_ros_driver2) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[1.141563] (livox_ros_driver2) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[1.195443] (livox_ros_driver2) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.201510] (-) TimerEvent: {}
+[1.215656] (livox_ros_driver2) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.299246] (livox_ros_driver2) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.299434] (livox_ros_driver2) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.301538] (-) TimerEvent: {}
+[1.384866] (livox_ros_driver2) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.385795] (livox_ros_driver2) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.401647] (-) TimerEvent: {}
+[1.501970] (-) TimerEvent: {}
+[1.580653] (livox_ros_driver2) StdoutLine: {'line': b"-- Checking for module 'eigen3'\n"}
+[1.599085] (livox_ros_driver2) StdoutLine: {'line': b'--   Found eigen3, version 3.4.0\n'}
+[1.602071] (-) TimerEvent: {}
+[1.646956] (livox_ros_driver2) StdoutLine: {'line': b'-- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") \n'}
+[1.647139] (livox_ros_driver2) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[1.702212] (-) TimerEvent: {}
+[1.715073] (livox_ros_driver2) StdoutLine: {'line': b"-- Checking for module 'flann'\n"}
+[1.734847] (livox_ros_driver2) StdoutLine: {'line': b'--   Found flann, version 1.9.1\n'}
+[1.787599] (livox_ros_driver2) StdoutLine: {'line': b'-- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  \n'}
+[1.787822] (livox_ros_driver2) StdoutLine: {'line': b'-- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)\n'}
+[1.802334] (-) TimerEvent: {}
+[1.902629] (-) TimerEvent: {}
+[2.002983] (-) TimerEvent: {}
+[2.103270] (-) TimerEvent: {}
+[2.203532] (-) TimerEvent: {}
+[2.303872] (-) TimerEvent: {}
+[2.404162] (-) TimerEvent: {}
+[2.504509] (-) TimerEvent: {}
+[2.604890] (-) TimerEvent: {}
+[2.705238] (-) TimerEvent: {}
+[2.805565] (-) TimerEvent: {}
+[2.905871] (-) TimerEvent: {}
+[2.920648] (livox_ros_driver2) StdoutLine: {'line': b"-- Checking for module 'libusb-1.0'\n"}
+[2.945025] (livox_ros_driver2) StdoutLine: {'line': b'--   Found libusb-1.0, version 1.0.25\n'}
+[2.990172] (livox_ros_driver2) StdoutLine: {'line': b'-- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  \n'}
+[2.991043] (livox_ros_driver2) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[3.005990] (-) TimerEvent: {}
+[3.076083] (livox_ros_driver2) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[3.106121] (-) TimerEvent: {}
+[3.206457] (-) TimerEvent: {}
+[3.214897] (livox_ros_driver2) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[3.221540] (livox_ros_driver2) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[3.228136] (livox_ros_driver2) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[3.306556] (-) TimerEvent: {}
+[3.368963] (livox_ros_driver2) StdoutLine: {'line': b'-- Found Qhull version 8.0.2\n'}
+[3.406660] (-) TimerEvent: {}
+[3.504941] (livox_ros_driver2) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[3.506724] (-) TimerEvent: {}
+[3.606989] (-) TimerEvent: {}
+[3.637124] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  \n'}
+[3.637936] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  \n'}
+[3.638715] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  \n'}
+[3.639480] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  \n'}
+[3.640204] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  \n'}
+[3.640927] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  \n'}
+[3.641309] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_2D: /usr/include/pcl-1.12  \n'}
+[3.641651] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_GEOMETRY: /usr/include/pcl-1.12  \n'}
+[3.642367] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  \n'}
+[3.643134] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  \n'}
+[3.643911] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  \n'}
+[3.644540] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  \n'}
+[3.645430] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  \n'}
+[3.646255] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  \n'}
+[3.647047] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  \n'}
+[3.647941] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  \n'}
+[3.648867] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  \n'}
+[3.649586] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  \n'}
+[3.650538] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  \n'}
+[3.651455] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  \n'}
+[3.652334] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  \n'}
+[3.652795] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_MODELER: /usr/include/pcl-1.12  \n'}
+[3.653230] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  \n'}
+[3.654057] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  \n'}
+[3.654985] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  \n'}
+[3.707112] (-) TimerEvent: {}
+[3.716140] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") \n'}
+[3.717189] (livox_ros_driver2) StdoutLine: {'line': b"-- Checking for module 'apr-1'\n"}
+[3.721598] (livox_ros_driver2) StdoutLine: {'line': b"--   No package 'apr-1' found\n"}
+[3.807260] (-) TimerEvent: {}
+[3.907532] (-) TimerEvent: {}
+[3.912219] (livox_ros_driver2) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[4.007623] (-) TimerEvent: {}
+[4.108009] (-) TimerEvent: {}
+[4.122635] (livox_ros_driver2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[4.208146] (-) TimerEvent: {}
+[4.308513] (-) TimerEvent: {}
+[4.383428] (livox_ros_driver2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[4.405815] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[4.408584] (-) TimerEvent: {}
+[4.411826] (livox_ros_driver2) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[4.437330] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[4.437676] (livox_ros_driver2) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[4.437768] (livox_ros_driver2) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[4.437848] (livox_ros_driver2) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[4.459163] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[4.508705] (-) TimerEvent: {}
+[4.564589] (livox_ros_driver2) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[4.608805] (-) TimerEvent: {}
+[4.619141] (livox_ros_driver2) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[4.624781] (livox_ros_driver2) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[4.625635] (livox_ros_driver2) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /root/nav2_ws/src/ws_livox/src/livox_ros_driver2/3rdparty;/root/nav2_ws/src/ws_livox/src/livox_ros_driver2/src\n'}
+[4.625816] (livox_ros_driver2) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[4.631024] (livox_ros_driver2) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[4.631160] (livox_ros_driver2) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[4.632586] (livox_ros_driver2) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[4.634799] (livox_ros_driver2) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[4.636924] (livox_ros_driver2) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[4.643219] (livox_ros_driver2) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[4.643368] (livox_ros_driver2) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[4.644843] (livox_ros_driver2) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[4.647944] (livox_ros_driver2) StdoutLine: {'line': b'-- Configuring done\n'}
+[4.700641] (livox_ros_driver2) StdoutLine: {'line': b'-- Generating done\n'}
+[4.708920] (-) TimerEvent: {}
+[4.717549] (livox_ros_driver2) StdoutLine: {'line': b'-- Build files have been written to: /root/nav2_ws/src/ws_livox/build/livox_ros_driver2\n'}
+[4.731892] (livox_ros_driver2) CommandEnded: {'returncode': 0}
+[4.733252] (livox_ros_driver2) JobProgress: {'identifier': 'livox_ros_driver2', 'progress': 'build'}
+[4.733699] (livox_ros_driver2) Command: {'cmd': ['/usr/bin/cmake', '--build', '/root/nav2_ws/src/ws_livox/build/livox_ros_driver2', '--', '-j8', '-l8'], 'cwd': '/root/nav2_ws/src/ws_livox/build/livox_ros_driver2', 'env': OrderedDict([('HOSTNAME', 'corra-IdeaPad-3-15IIL05'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/root/nav2_ws/src/ws_livox/install/livox_ros_driver2/lib:/root/nav2_ws/install/pointcloud_to_laserscan/lib:/root/nav2_ws/install/nav2_smoother/lib:/root/nav2_ws/install/nav2_rotation_shim_controller/lib:/root/nav2_ws/install/nav2_graceful_controller/lib:/root/nav2_ws/install/nav2_controller/lib:/root/nav2_ws/install/dwb_plugins/lib:/root/nav2_ws/install/dwb_critics/lib:/root/nav2_ws/install/dwb_core/lib:/root/nav2_ws/install/nav_2d_utils/lib:/root/nav2_ws/install/dwb_msgs/lib:/root/nav2_ws/install/nav_2d_msgs/lib:/root/nav2_ws/install/nav2_waypoint_follower/lib:/root/nav2_ws/install/nav2_theta_star_planner/lib:/root/nav2_ws/install/nav2_smac_planner/lib:/root/nav2_ws/install/nav2_route/lib:/root/nav2_ws/install/nav2_regulated_pure_pursuit_controller/lib:/root/nav2_ws/install/nav2_planner/lib:/root/nav2_ws/install/nav2_navfn_planner/lib:/root/nav2_ws/install/nav2_mppi_controller/lib:/root/nav2_ws/install/nav2_constrained_smoother/lib:/root/nav2_ws/install/nav2_bt_navigator/lib:/root/nav2_ws/install/nav2_behaviors/lib:/root/nav2_ws/install/nav2_collision_monitor/lib:/root/nav2_ws/install/costmap_queue/lib:/root/nav2_ws/install/nav2_costmap_2d/lib:/root/nav2_ws/install/nav2_voxel_grid/lib:/root/nav2_ws/install/nav2_velocity_smoother/lib:/root/nav2_ws/install/nav2_rviz_plugins/lib:/root/nav2_ws/install/nav2_map_server/lib:/root/nav2_ws/install/nav2_lifecycle_manager/lib:/root/nav2_ws/install/nav2_behavior_tree/lib:/root/nav2_ws/install/nav2_amcl/lib:/root/nav2_ws/install/nav2_util/lib:/root/nav2_ws/install/nav2_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib:/usr/local/lib'), ('HOME', '/root'), ('OLDPWD', '/root/nav2_ws/src/ws_livox/src/livox_ros_driver2'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/root/nav2_ws/install:/root/nav2_ws/src/ws_livox/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', 'ROS2'), ('TERM', 'xterm'), ('GAZEBO_MODEL_PATH', ':/root/initialize/tb3_gazebo_models:/root/initialize/tb3_gazebo_models:/root/initialize/tb3_gazebo_models'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/root/nav2_ws/src/ws_livox/install/livox_ros_driver2:/root/nav2_ws/install/sensor_launcher:/root/nav2_ws/install/unitree_lidar_ros2:/root/nav2_ws/install/pointcloud_to_laserscan:/root/nav2_ws/install/nav2_system_tests:/root/nav2_ws/install/nav2_bringup:/root/nav2_ws/install/navigation2:/root/nav2_ws/install/nav2_smoother:/root/nav2_ws/install/nav2_rotation_shim_controller:/root/nav2_ws/install/nav2_graceful_controller:/root/nav2_ws/install/nav2_dwb_controller:/root/nav2_ws/install/nav2_controller:/root/nav2_ws/install/dwb_plugins:/root/nav2_ws/install/dwb_critics:/root/nav2_ws/install/dwb_core:/root/nav2_ws/install/nav_2d_utils:/root/nav2_ws/install/dwb_msgs:/root/nav2_ws/install/nav_2d_msgs:/root/nav2_ws/install/nav2_waypoint_follower:/root/nav2_ws/install/nav2_theta_star_planner:/root/nav2_ws/install/nav2_smac_planner:/root/nav2_ws/install/nav2_route:/root/nav2_ws/install/nav2_regulated_pure_pursuit_controller:/root/nav2_ws/install/nav2_planner:/root/nav2_ws/install/nav2_navfn_planner:/root/nav2_ws/install/nav2_mppi_controller:/root/nav2_ws/install/nav2_constrained_smoother:/root/nav2_ws/install/nav2_bt_navigator:/root/nav2_ws/install/nav2_behaviors:/root/nav2_ws/install/nav2_core:/root/nav2_ws/install/nav2_collision_monitor:/root/nav2_ws/install/costmap_queue:/root/nav2_ws/install/nav2_costmap_2d:/root/nav2_ws/install/nav2_voxel_grid:/root/nav2_ws/install/nav2_velocity_smoother:/root/nav2_ws/install/nav2_rviz_plugins:/root/nav2_ws/install/nav2_map_server:/root/nav2_ws/install/nav2_lifecycle_manager:/root/nav2_ws/install/nav2_behavior_tree:/root/nav2_ws/install/nav2_amcl:/root/nav2_ws/install/nav2_util:/root/nav2_ws/install/nav2_simple_commander:/root/nav2_ws/install/nav2_odom_to_tf:/root/nav2_ws/install/nav2_msgs:/root/nav2_ws/install/nav2_common:/root/nav2_ws/install/lidar_odometry:/opt/ros/humble'), ('PWD', '/root/nav2_ws/src/ws_livox/build/livox_ros_driver2'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/root/nav2_ws/src/ws_livox/install/livox_ros_driver2/local/lib/python3.10/dist-packages:/root/nav2_ws/install/sensor_launcher/lib/python3.10/site-packages:/root/nav2_ws/install/dwb_msgs/local/lib/python3.10/dist-packages:/root/nav2_ws/install/nav_2d_msgs/local/lib/python3.10/dist-packages:/root/nav2_ws/build/nav2_simple_commander:/root/nav2_ws/install/nav2_simple_commander/lib/python3.10/site-packages:/root/nav2_ws/install/nav2_odom_to_tf/lib/python3.10/site-packages:/root/nav2_ws/install/nav2_msgs/local/lib/python3.10/dist-packages:/root/nav2_ws/install/nav2_common/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/root/nav2_ws/src/ws_livox/install/livox_ros_driver2:/root/nav2_ws/install/unitree_lidar_ros2:/root/nav2_ws/install/pointcloud_to_laserscan:/root/nav2_ws/install/nav2_system_tests:/root/nav2_ws/install/nav2_bringup:/root/nav2_ws/install/navigation2:/root/nav2_ws/install/nav2_smoother:/root/nav2_ws/install/nav2_rotation_shim_controller:/root/nav2_ws/install/nav2_graceful_controller:/root/nav2_ws/install/nav2_dwb_controller:/root/nav2_ws/install/nav2_controller:/root/nav2_ws/install/dwb_plugins:/root/nav2_ws/install/dwb_critics:/root/nav2_ws/install/dwb_core:/root/nav2_ws/install/nav_2d_utils:/root/nav2_ws/install/dwb_msgs:/root/nav2_ws/install/nav_2d_msgs:/root/nav2_ws/install/nav2_waypoint_follower:/root/nav2_ws/install/nav2_theta_star_planner:/root/nav2_ws/install/nav2_smac_planner:/root/nav2_ws/install/nav2_route:/root/nav2_ws/install/nav2_regulated_pure_pursuit_controller:/root/nav2_ws/install/nav2_planner:/root/nav2_ws/install/nav2_navfn_planner:/root/nav2_ws/install/nav2_mppi_controller:/root/nav2_ws/install/nav2_constrained_smoother:/root/nav2_ws/install/nav2_bt_navigator:/root/nav2_ws/install/nav2_behaviors:/root/nav2_ws/install/nav2_core:/root/nav2_ws/install/nav2_collision_monitor:/root/nav2_ws/install/costmap_queue:/root/nav2_ws/install/nav2_costmap_2d:/root/nav2_ws/install/nav2_voxel_grid:/root/nav2_ws/install/nav2_velocity_smoother:/root/nav2_ws/install/nav2_rviz_plugins:/root/nav2_ws/install/nav2_map_server:/root/nav2_ws/install/nav2_lifecycle_manager:/root/nav2_ws/install/nav2_behavior_tree:/root/nav2_ws/install/nav2_amcl:/root/nav2_ws/install/nav2_util:/root/nav2_ws/install/nav2_msgs:/root/nav2_ws/install/nav2_common:/root/nav2_ws/install/lidar_odometry:/root/nav2_ws/install/sensor_launcher:/root/nav2_ws/install/nav2_simple_commander:/root/nav2_ws/install/nav2_odom_to_tf:/opt/ros/humble')]), 'shell': False}
+[4.795684] (livox_ros_driver2) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[4.809020] (-) TimerEvent: {}
+[4.812903] (livox_ros_driver2) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[4.815120] (livox_ros_driver2) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding CXX object CMakeFiles/livox_ros_driver2_node.dir/rclcpp_components/node_main_livox_ros_driver2_node.cpp.o\x1b[0m\n'}
+[4.820911] (livox_ros_driver2) StdoutLine: {'line': b'[  5%] Built target ament_cmake_python_copy_livox_ros_driver2\n'}
+[4.909655] (-) TimerEvent: {}
+[5.011467] (-) TimerEvent: {}
+[5.112283] (-) TimerEvent: {}
+[5.132461] (livox_ros_driver2) StdoutLine: {'line': b'running egg_info\n'}
+[5.141596] (livox_ros_driver2) StdoutLine: {'line': b'creating livox_ros_driver2.egg-info\n'}
+[5.146270] (livox_ros_driver2) StdoutLine: {'line': b'writing livox_ros_driver2.egg-info/PKG-INFO\n'}
+[5.146544] (livox_ros_driver2) StdoutLine: {'line': b'writing dependency_links to livox_ros_driver2.egg-info/dependency_links.txt\n'}
+[5.146727] (livox_ros_driver2) StdoutLine: {'line': b'writing top-level names to livox_ros_driver2.egg-info/top_level.txt\n'}
+[5.146893] (livox_ros_driver2) StdoutLine: {'line': b"writing manifest file 'livox_ros_driver2.egg-info/SOURCES.txt'\n"}
+[5.150575] (livox_ros_driver2) StdoutLine: {'line': b"reading manifest file 'livox_ros_driver2.egg-info/SOURCES.txt'\n"}
+[5.151069] (livox_ros_driver2) StdoutLine: {'line': b"writing manifest file 'livox_ros_driver2.egg-info/SOURCES.txt'\n"}
+[5.212806] (-) TimerEvent: {}
+[5.217716] (livox_ros_driver2) StdoutLine: {'line': b'[  5%] Built target ament_cmake_python_build_livox_ros_driver2_egg\n'}
+[5.312821] (-) TimerEvent: {}
+[5.413621] (-) TimerEvent: {}
+[5.439992] (livox_ros_driver2) StdoutLine: {'line': b'[  5%] Built target livox_interfaces2__cpp\n'}
+[5.456625] (livox_ros_driver2) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/livox_interfaces2__rosidl_generator_c.dir/rosidl_generator_c/livox_ros_driver2/msg/detail/custom_msg__functions.c.o\x1b[0m\n'}
+[5.457487] (livox_ros_driver2) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/livox_interfaces2__rosidl_generator_c.dir/rosidl_generator_c/livox_ros_driver2/msg/detail/custom_point__functions.c.o\x1b[0m\n'}
+[5.498572] (livox_ros_driver2) StdoutLine: {'line': b'[ 10%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[5.498943] (livox_ros_driver2) StdoutLine: {'line': b'[ 12%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[5.500679] (livox_ros_driver2) StdoutLine: {'line': b'[ 14%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[5.514129] (-) TimerEvent: {}
+[5.606321] (livox_ros_driver2) StdoutLine: {'line': b'[ 15%] \x1b[32m\x1b[1mLinking C shared library liblivox_ros_driver2__rosidl_generator_c.so\x1b[0m\n'}
+[5.614143] (-) TimerEvent: {}
+[5.715084] (-) TimerEvent: {}
+[5.715348] (livox_ros_driver2) StdoutLine: {'line': b'[ 15%] Built target livox_interfaces2__rosidl_generator_c\n'}
+[5.784831] (livox_ros_driver2) StdoutLine: {'line': b'[ 17%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[5.801141] (livox_ros_driver2) StdoutLine: {'line': b'[ 19%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[5.813278] (livox_ros_driver2) StdoutLine: {'line': b'[ 21%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[5.815076] (-) TimerEvent: {}
+[5.915982] (-) TimerEvent: {}
+[6.016949] (-) TimerEvent: {}
+[6.119420] (-) TimerEvent: {}
+[6.225385] (-) TimerEvent: {}
+[6.326538] (-) TimerEvent: {}
+[6.434363] (-) TimerEvent: {}
+[6.543884] (-) TimerEvent: {}
+[6.646345] (-) TimerEvent: {}
+[6.754815] (-) TimerEvent: {}
+[6.855200] (-) TimerEvent: {}
+[6.956109] (-) TimerEvent: {}
+[7.060055] (-) TimerEvent: {}
+[7.167465] (-) TimerEvent: {}
+[7.269208] (-) TimerEvent: {}
+[7.321659] (livox_ros_driver2) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/livox_interfaces2__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/livox_ros_driver2/msg/detail/custom_point__type_support.cpp.o\x1b[0m\n'}
+[7.332159] (livox_ros_driver2) StdoutLine: {'line': b'[ 24%] \x1b[32mBuilding CXX object CMakeFiles/livox_interfaces2__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/livox_ros_driver2/msg/detail/custom_msg__type_support.cpp.o\x1b[0m\n'}
+[7.371510] (-) TimerEvent: {}
+[7.375091] (livox_ros_driver2) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/livox_interfaces2__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/livox_ros_driver2/msg/detail/dds_fastrtps/custom_point__type_support.cpp.o\x1b[0m\n'}
+[7.396755] (livox_ros_driver2) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/livox_interfaces2__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/livox_ros_driver2/msg/custom_point__type_support.cpp.o\x1b[0m\n'}
+[7.458040] (livox_ros_driver2) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/livox_interfaces2__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/livox_ros_driver2/msg/detail/custom_point__type_support_c.cpp.o\x1b[0m\n'}
+[7.477506] (-) TimerEvent: {}
+[7.578182] (-) TimerEvent: {}
+[7.683512] (-) TimerEvent: {}
+[7.685331] (livox_ros_driver2) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/livox_interfaces2__rosidl_typesupport_c.dir/rosidl_typesupport_c/livox_ros_driver2/msg/custom_point__type_support.cpp.o\x1b[0m\n'}
+[7.784048] (-) TimerEvent: {}
+[7.846991] (livox_ros_driver2) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/livox_interfaces2__rosidl_typesupport_c.dir/rosidl_typesupport_c/livox_ros_driver2/msg/custom_msg__type_support.cpp.o\x1b[0m\n'}
+[7.864683] (livox_ros_driver2) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding C object CMakeFiles/livox_interfaces2__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/livox_ros_driver2/msg/detail/custom_point__type_support.c.o\x1b[0m\n'}
+[7.885536] (-) TimerEvent: {}
+[7.986343] (-) TimerEvent: {}
+[8.010271] (livox_ros_driver2) StdoutLine: {'line': b'[ 36%] \x1b[32m\x1b[1mLinking CXX shared library liblivox_ros_driver2__rosidl_typesupport_c.so\x1b[0m\n'}
+[8.056710] (livox_ros_driver2) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding C object CMakeFiles/livox_interfaces2__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/livox_ros_driver2/msg/detail/custom_msg__type_support.c.o\x1b[0m\n'}
+[8.086330] (-) TimerEvent: {}
+[8.187302] (-) TimerEvent: {}
+[8.228323] (livox_ros_driver2) StdoutLine: {'line': b'[ 38%] Built target livox_interfaces2__rosidl_typesupport_c\n'}
+[8.250087] (livox_ros_driver2) StdoutLine: {'line': b'[ 40%] \x1b[32m\x1b[1mLinking C shared library liblivox_ros_driver2__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[8.287294] (-) TimerEvent: {}
+[8.302699] (livox_ros_driver2) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/livox_interfaces2__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/livox_ros_driver2/msg/custom_msg__type_support.cpp.o\x1b[0m\n'}
+[8.389264] (-) TimerEvent: {}
+[8.449921] (livox_ros_driver2) StdoutLine: {'line': b'[ 42%] Built target livox_interfaces2__rosidl_typesupport_introspection_c\n'}
+[8.492519] (-) TimerEvent: {}
+[8.493682] (livox_ros_driver2) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/livox_interfaces2__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/livox_ros_driver2/msg/detail/custom_msg__type_support_c.cpp.o\x1b[0m\n'}
+[8.518759] (livox_ros_driver2) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/livox_interfaces2__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/livox_ros_driver2/msg/detail/dds_fastrtps/custom_msg__type_support.cpp.o\x1b[0m\n'}
+[8.592626] (-) TimerEvent: {}
+[8.696534] (-) TimerEvent: {}
+[8.800902] (-) TimerEvent: {}
+[8.873977] (livox_ros_driver2) StdoutLine: {'line': b'[ 47%] \x1b[32m\x1b[1mLinking CXX shared library liblivox_ros_driver2__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[8.901267] (-) TimerEvent: {}
+[9.003162] (-) TimerEvent: {}
+[9.009749] (livox_ros_driver2) StdoutLine: {'line': b'[ 47%] Built target livox_interfaces2__rosidl_typesupport_introspection_cpp\n'}
+[9.103680] (-) TimerEvent: {}
+[9.152935] (livox_ros_driver2) StdoutLine: {'line': b'[ 49%] \x1b[32m\x1b[1mLinking CXX shared library liblivox_ros_driver2__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[9.203948] (-) TimerEvent: {}
+[9.225766] (livox_ros_driver2) StdoutLine: {'line': b'[ 50%] \x1b[32m\x1b[1mLinking CXX shared library liblivox_ros_driver2__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[9.227477] (livox_ros_driver2) StdoutLine: {'line': b'[ 50%] Built target livox_interfaces2__rosidl_typesupport_cpp\n'}
+[9.305903] (-) TimerEvent: {}
+[9.329922] (livox_ros_driver2) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding CXX object CMakeFiles/livox_ros_driver2.dir/src/lds.cpp.o\x1b[0m\n'}
+[9.330242] (livox_ros_driver2) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding CXX object CMakeFiles/livox_ros_driver2.dir/src/driver_node.cpp.o\x1b[0m\n'}
+[9.330383] (livox_ros_driver2) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding CXX object CMakeFiles/livox_ros_driver2.dir/src/livox_ros_driver2.cpp.o\x1b[0m\n'}
+[9.330500] (livox_ros_driver2) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/livox_ros_driver2.dir/src/lddc.cpp.o\x1b[0m\n'}
+[9.335670] (livox_ros_driver2) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding CXX object CMakeFiles/livox_ros_driver2.dir/src/lds_lidar.cpp.o\x1b[0m\n'}
+[9.405914] (-) TimerEvent: {}
+[9.450260] (livox_ros_driver2) StdoutLine: {'line': b'[ 59%] Built target livox_interfaces2__rosidl_typesupport_fastrtps_c\n'}
+[9.483521] (livox_ros_driver2) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/livox_ros_driver2.dir/src/comm/comm.cpp.o\x1b[0m\n'}
+[9.506022] (-) TimerEvent: {}
+[9.543205] (livox_ros_driver2) StdoutLine: {'line': b'[ 63%] \x1b[32m\x1b[1mLinking CXX shared library liblivox_ros_driver2__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[9.609515] (-) TimerEvent: {}
+[9.680726] (livox_ros_driver2) StdoutLine: {'line': b'[ 63%] Built target livox_interfaces2__rosidl_typesupport_fastrtps_cpp\n'}
+[9.709629] (-) TimerEvent: {}
+[9.714048] (livox_ros_driver2) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding CXX object CMakeFiles/livox_ros_driver2.dir/src/comm/ldq.cpp.o\x1b[0m\n'}
+[9.809739] (-) TimerEvent: {}
+[9.910074] (-) TimerEvent: {}
+[10.010480] (-) TimerEvent: {}
+[10.111860] (-) TimerEvent: {}
+[10.212301] (-) TimerEvent: {}
+[10.313750] (-) TimerEvent: {}
+[10.418169] (-) TimerEvent: {}
+[10.518932] (-) TimerEvent: {}
+[10.576564] (livox_ros_driver2) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/livox_ros_driver2.dir/src/comm/semaphore.cpp.o\x1b[0m\n'}
+[10.619039] (-) TimerEvent: {}
+[10.633361] (livox_ros_driver2) StdoutLine: {'line': b'[ 66%] Built target livox_interfaces2\n'}
+[10.667988] (livox_ros_driver2) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object CMakeFiles/livox_ros_driver2.dir/src/comm/lidar_imu_data_queue.cpp.o\x1b[0m\n'}
+[10.721516] (-) TimerEvent: {}
+[10.818852] (livox_ros_driver2) StdoutLine: {'line': b'[ 70%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[10.821619] (-) TimerEvent: {}
+[10.922030] (-) TimerEvent: {}
+[10.973520] (livox_ros_driver2) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/livox_ros_driver2.dir/src/comm/cache_index.cpp.o\x1b[0m\n'}
+[11.022141] (-) TimerEvent: {}
+[11.128505] (-) TimerEvent: {}
+[11.228914] (-) TimerEvent: {}
+[11.234515] (livox_ros_driver2) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object CMakeFiles/livox_ros_driver2.dir/src/comm/pub_handler.cpp.o\x1b[0m\n'}
+[11.298380] (livox_ros_driver2) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/livox_ros_driver2.dir/src/parse_cfg_file/parse_cfg_file.cpp.o\x1b[0m\n'}
+[11.329020] (-) TimerEvent: {}
+[11.429616] (-) TimerEvent: {}
+[11.532517] (-) TimerEvent: {}
+[11.632959] (-) TimerEvent: {}
+[11.733335] (-) TimerEvent: {}
+[11.833746] (-) TimerEvent: {}
+[11.934571] (-) TimerEvent: {}
+[12.037498] (-) TimerEvent: {}
+[12.137829] (-) TimerEvent: {}
+[12.177705] (livox_ros_driver2) StdoutLine: {'line': b'[ 77%] \x1b[32m\x1b[1mLinking CXX executable livox_ros_driver2_node\x1b[0m\n'}
+[12.239500] (-) TimerEvent: {}
+[12.301850] (livox_ros_driver2) StdoutLine: {'line': b'[ 78%] \x1b[32mBuilding CXX object CMakeFiles/livox_ros_driver2.dir/src/parse_cfg_file/parse_livox_lidar_cfg.cpp.o\x1b[0m\n'}
+[12.323534] (livox_ros_driver2) StdoutLine: {'line': b'[ 78%] Built target livox_interfaces2__py\n'}
+[12.339638] (-) TimerEvent: {}
+[12.346211] (livox_ros_driver2) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding CXX object CMakeFiles/livox_ros_driver2.dir/src/call_back/lidar_common_callback.cpp.o\x1b[0m\n'}
+[12.418473] (livox_ros_driver2) StdoutLine: {'line': b'[ 80%] Built target livox_ros_driver2_node\n'}
+[12.439740] (-) TimerEvent: {}
+[12.440547] (livox_ros_driver2) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding CXX object CMakeFiles/livox_ros_driver2.dir/src/call_back/livox_lidar_callback.cpp.o\x1b[0m\n'}
+[12.539854] (-) TimerEvent: {}
+[12.642765] (-) TimerEvent: {}
+[12.743098] (-) TimerEvent: {}
+[12.838541] (livox_ros_driver2) StdoutLine: {'line': b'[ 84%] \x1b[32mBuilding C object CMakeFiles/livox_interfaces2__rosidl_generator_py.dir/rosidl_generator_py/livox_ros_driver2/msg/_custom_point_s.c.o\x1b[0m\n'}
+[12.843225] (-) TimerEvent: {}
+[12.944840] (-) TimerEvent: {}
+[13.045270] (-) TimerEvent: {}
+[13.053552] (livox_ros_driver2) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/livox_interfaces2__rosidl_generator_py.dir/rosidl_generator_py/livox_ros_driver2/msg/_custom_msg_s.c.o\x1b[0m\n'}
+[13.145415] (-) TimerEvent: {}
+[13.247527] (-) TimerEvent: {}
+[13.286691] (livox_ros_driver2) StdoutLine: {'line': b'[ 87%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/livox_ros_driver2/liblivox_interfaces2__rosidl_generator_py.so\x1b[0m\n'}
+[13.347637] (-) TimerEvent: {}
+[13.401592] (livox_ros_driver2) StdoutLine: {'line': b'[ 87%] Built target livox_interfaces2__rosidl_generator_py\n'}
+[13.447763] (-) TimerEvent: {}
+[13.460767] (livox_ros_driver2) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/livox_ros_driver2__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/livox_ros_driver2/_livox_ros_driver2_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[13.547905] (-) TimerEvent: {}
+[13.619515] (livox_ros_driver2) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/livox_ros_driver2__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/livox_ros_driver2/_livox_ros_driver2_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[13.648023] (-) TimerEvent: {}
+[13.680180] (livox_ros_driver2) StdoutLine: {'line': b'[ 92%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/livox_ros_driver2/livox_ros_driver2_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[13.706936] (livox_ros_driver2) StdoutLine: {'line': b'[ 94%] \x1b[32mBuilding C object CMakeFiles/livox_ros_driver2__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/livox_ros_driver2/_livox_ros_driver2_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[13.750522] (-) TimerEvent: {}
+[13.767027] (livox_ros_driver2) StdoutLine: {'line': b'[ 94%] Built target livox_ros_driver2__rosidl_typesupport_fastrtps_c__pyext\n'}
+[13.802173] (livox_ros_driver2) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/livox_ros_driver2/livox_ros_driver2_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[13.850648] (-) TimerEvent: {}
+[13.857131] (livox_ros_driver2) StdoutLine: {'line': b'[ 96%] Built target livox_ros_driver2__rosidl_typesupport_introspection_c__pyext\n'}
+[13.893921] (livox_ros_driver2) StdoutLine: {'line': b'[ 98%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/livox_ros_driver2/livox_ros_driver2_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[13.948345] (livox_ros_driver2) StdoutLine: {'line': b'[ 98%] Built target livox_ros_driver2__rosidl_typesupport_c__pyext\n'}
+[13.950756] (-) TimerEvent: {}
+[14.051073] (-) TimerEvent: {}
+[14.151397] (-) TimerEvent: {}
+[14.251736] (-) TimerEvent: {}
+[14.352087] (-) TimerEvent: {}
+[14.452399] (-) TimerEvent: {}
+[14.552721] (-) TimerEvent: {}
+[14.653066] (-) TimerEvent: {}
+[14.753424] (-) TimerEvent: {}
+[14.853802] (-) TimerEvent: {}
+[14.954178] (-) TimerEvent: {}
+[15.054556] (-) TimerEvent: {}
+[15.154880] (-) TimerEvent: {}
+[15.255226] (-) TimerEvent: {}
+[15.355515] (-) TimerEvent: {}
+[15.455856] (-) TimerEvent: {}
+[15.556180] (-) TimerEvent: {}
+[15.656526] (-) TimerEvent: {}
+[15.756862] (-) TimerEvent: {}
+[15.857185] (-) TimerEvent: {}
+[15.957502] (-) TimerEvent: {}
+[16.057827] (-) TimerEvent: {}
+[16.158169] (-) TimerEvent: {}
+[16.258508] (-) TimerEvent: {}
+[16.358824] (-) TimerEvent: {}
+[16.459150] (-) TimerEvent: {}
+[16.560763] (-) TimerEvent: {}
+[16.664240] (-) TimerEvent: {}
+[16.764563] (-) TimerEvent: {}
+[16.864881] (-) TimerEvent: {}
+[16.965186] (-) TimerEvent: {}
+[17.065482] (-) TimerEvent: {}
+[17.165792] (-) TimerEvent: {}
+[17.266101] (-) TimerEvent: {}
+[17.366396] (-) TimerEvent: {}
+[17.466671] (-) TimerEvent: {}
+[17.566997] (-) TimerEvent: {}
+[17.667307] (-) TimerEvent: {}
+[17.767639] (-) TimerEvent: {}
+[17.867961] (-) TimerEvent: {}
+[17.968249] (-) TimerEvent: {}
+[18.068567] (-) TimerEvent: {}
+[18.168889] (-) TimerEvent: {}
+[18.269171] (-) TimerEvent: {}
+[18.369510] (-) TimerEvent: {}
+[18.469778] (-) TimerEvent: {}
+[18.570098] (-) TimerEvent: {}
+[18.670410] (-) TimerEvent: {}
+[18.770737] (-) TimerEvent: {}
+[18.871015] (-) TimerEvent: {}
+[18.971322] (-) TimerEvent: {}
+[19.000596] (livox_ros_driver2) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library liblivox_ros_driver2.so\x1b[0m\n'}
+[19.071497] (-) TimerEvent: {}
+[19.171830] (-) TimerEvent: {}
+[19.272150] (-) TimerEvent: {}
+[19.372496] (-) TimerEvent: {}
+[19.472859] (-) TimerEvent: {}
+[19.573203] (-) TimerEvent: {}
+[19.639608] (livox_ros_driver2) StdoutLine: {'line': b'[100%] Built target livox_ros_driver2\n'}
+[19.653295] (livox_ros_driver2) CommandEnded: {'returncode': 0}
+[19.653863] (livox_ros_driver2) JobProgress: {'identifier': 'livox_ros_driver2', 'progress': 'install'}
+[19.664451] (livox_ros_driver2) Command: {'cmd': ['/usr/bin/cmake', '--install', '/root/nav2_ws/src/ws_livox/build/livox_ros_driver2'], 'cwd': '/root/nav2_ws/src/ws_livox/build/livox_ros_driver2', 'env': OrderedDict([('HOSTNAME', 'corra-IdeaPad-3-15IIL05'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/root/nav2_ws/src/ws_livox/install/livox_ros_driver2/lib:/root/nav2_ws/install/pointcloud_to_laserscan/lib:/root/nav2_ws/install/nav2_smoother/lib:/root/nav2_ws/install/nav2_rotation_shim_controller/lib:/root/nav2_ws/install/nav2_graceful_controller/lib:/root/nav2_ws/install/nav2_controller/lib:/root/nav2_ws/install/dwb_plugins/lib:/root/nav2_ws/install/dwb_critics/lib:/root/nav2_ws/install/dwb_core/lib:/root/nav2_ws/install/nav_2d_utils/lib:/root/nav2_ws/install/dwb_msgs/lib:/root/nav2_ws/install/nav_2d_msgs/lib:/root/nav2_ws/install/nav2_waypoint_follower/lib:/root/nav2_ws/install/nav2_theta_star_planner/lib:/root/nav2_ws/install/nav2_smac_planner/lib:/root/nav2_ws/install/nav2_route/lib:/root/nav2_ws/install/nav2_regulated_pure_pursuit_controller/lib:/root/nav2_ws/install/nav2_planner/lib:/root/nav2_ws/install/nav2_navfn_planner/lib:/root/nav2_ws/install/nav2_mppi_controller/lib:/root/nav2_ws/install/nav2_constrained_smoother/lib:/root/nav2_ws/install/nav2_bt_navigator/lib:/root/nav2_ws/install/nav2_behaviors/lib:/root/nav2_ws/install/nav2_collision_monitor/lib:/root/nav2_ws/install/costmap_queue/lib:/root/nav2_ws/install/nav2_costmap_2d/lib:/root/nav2_ws/install/nav2_voxel_grid/lib:/root/nav2_ws/install/nav2_velocity_smoother/lib:/root/nav2_ws/install/nav2_rviz_plugins/lib:/root/nav2_ws/install/nav2_map_server/lib:/root/nav2_ws/install/nav2_lifecycle_manager/lib:/root/nav2_ws/install/nav2_behavior_tree/lib:/root/nav2_ws/install/nav2_amcl/lib:/root/nav2_ws/install/nav2_util/lib:/root/nav2_ws/install/nav2_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib:/usr/local/lib'), ('HOME', '/root'), ('OLDPWD', '/root/nav2_ws/src/ws_livox/src/livox_ros_driver2'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/root/nav2_ws/install:/root/nav2_ws/src/ws_livox/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', 'ROS2'), ('TERM', 'xterm'), ('GAZEBO_MODEL_PATH', ':/root/initialize/tb3_gazebo_models:/root/initialize/tb3_gazebo_models:/root/initialize/tb3_gazebo_models'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/root/nav2_ws/src/ws_livox/install/livox_ros_driver2:/root/nav2_ws/install/sensor_launcher:/root/nav2_ws/install/unitree_lidar_ros2:/root/nav2_ws/install/pointcloud_to_laserscan:/root/nav2_ws/install/nav2_system_tests:/root/nav2_ws/install/nav2_bringup:/root/nav2_ws/install/navigation2:/root/nav2_ws/install/nav2_smoother:/root/nav2_ws/install/nav2_rotation_shim_controller:/root/nav2_ws/install/nav2_graceful_controller:/root/nav2_ws/install/nav2_dwb_controller:/root/nav2_ws/install/nav2_controller:/root/nav2_ws/install/dwb_plugins:/root/nav2_ws/install/dwb_critics:/root/nav2_ws/install/dwb_core:/root/nav2_ws/install/nav_2d_utils:/root/nav2_ws/install/dwb_msgs:/root/nav2_ws/install/nav_2d_msgs:/root/nav2_ws/install/nav2_waypoint_follower:/root/nav2_ws/install/nav2_theta_star_planner:/root/nav2_ws/install/nav2_smac_planner:/root/nav2_ws/install/nav2_route:/root/nav2_ws/install/nav2_regulated_pure_pursuit_controller:/root/nav2_ws/install/nav2_planner:/root/nav2_ws/install/nav2_navfn_planner:/root/nav2_ws/install/nav2_mppi_controller:/root/nav2_ws/install/nav2_constrained_smoother:/root/nav2_ws/install/nav2_bt_navigator:/root/nav2_ws/install/nav2_behaviors:/root/nav2_ws/install/nav2_core:/root/nav2_ws/install/nav2_collision_monitor:/root/nav2_ws/install/costmap_queue:/root/nav2_ws/install/nav2_costmap_2d:/root/nav2_ws/install/nav2_voxel_grid:/root/nav2_ws/install/nav2_velocity_smoother:/root/nav2_ws/install/nav2_rviz_plugins:/root/nav2_ws/install/nav2_map_server:/root/nav2_ws/install/nav2_lifecycle_manager:/root/nav2_ws/install/nav2_behavior_tree:/root/nav2_ws/install/nav2_amcl:/root/nav2_ws/install/nav2_util:/root/nav2_ws/install/nav2_simple_commander:/root/nav2_ws/install/nav2_odom_to_tf:/root/nav2_ws/install/nav2_msgs:/root/nav2_ws/install/nav2_common:/root/nav2_ws/install/lidar_odometry:/opt/ros/humble'), ('PWD', '/root/nav2_ws/src/ws_livox/build/livox_ros_driver2'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/root/nav2_ws/src/ws_livox/install/livox_ros_driver2/local/lib/python3.10/dist-packages:/root/nav2_ws/install/sensor_launcher/lib/python3.10/site-packages:/root/nav2_ws/install/dwb_msgs/local/lib/python3.10/dist-packages:/root/nav2_ws/install/nav_2d_msgs/local/lib/python3.10/dist-packages:/root/nav2_ws/build/nav2_simple_commander:/root/nav2_ws/install/nav2_simple_commander/lib/python3.10/site-packages:/root/nav2_ws/install/nav2_odom_to_tf/lib/python3.10/site-packages:/root/nav2_ws/install/nav2_msgs/local/lib/python3.10/dist-packages:/root/nav2_ws/install/nav2_common/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/root/nav2_ws/src/ws_livox/install/livox_ros_driver2:/root/nav2_ws/install/unitree_lidar_ros2:/root/nav2_ws/install/pointcloud_to_laserscan:/root/nav2_ws/install/nav2_system_tests:/root/nav2_ws/install/nav2_bringup:/root/nav2_ws/install/navigation2:/root/nav2_ws/install/nav2_smoother:/root/nav2_ws/install/nav2_rotation_shim_controller:/root/nav2_ws/install/nav2_graceful_controller:/root/nav2_ws/install/nav2_dwb_controller:/root/nav2_ws/install/nav2_controller:/root/nav2_ws/install/dwb_plugins:/root/nav2_ws/install/dwb_critics:/root/nav2_ws/install/dwb_core:/root/nav2_ws/install/nav_2d_utils:/root/nav2_ws/install/dwb_msgs:/root/nav2_ws/install/nav_2d_msgs:/root/nav2_ws/install/nav2_waypoint_follower:/root/nav2_ws/install/nav2_theta_star_planner:/root/nav2_ws/install/nav2_smac_planner:/root/nav2_ws/install/nav2_route:/root/nav2_ws/install/nav2_regulated_pure_pursuit_controller:/root/nav2_ws/install/nav2_planner:/root/nav2_ws/install/nav2_navfn_planner:/root/nav2_ws/install/nav2_mppi_controller:/root/nav2_ws/install/nav2_constrained_smoother:/root/nav2_ws/install/nav2_bt_navigator:/root/nav2_ws/install/nav2_behaviors:/root/nav2_ws/install/nav2_core:/root/nav2_ws/install/nav2_collision_monitor:/root/nav2_ws/install/costmap_queue:/root/nav2_ws/install/nav2_costmap_2d:/root/nav2_ws/install/nav2_voxel_grid:/root/nav2_ws/install/nav2_velocity_smoother:/root/nav2_ws/install/nav2_rviz_plugins:/root/nav2_ws/install/nav2_map_server:/root/nav2_ws/install/nav2_lifecycle_manager:/root/nav2_ws/install/nav2_behavior_tree:/root/nav2_ws/install/nav2_amcl:/root/nav2_ws/install/nav2_util:/root/nav2_ws/install/nav2_msgs:/root/nav2_ws/install/nav2_common:/root/nav2_ws/install/lidar_odometry:/root/nav2_ws/install/sensor_launcher:/root/nav2_ws/install/nav2_simple_commander:/root/nav2_ws/install/nav2_odom_to_tf:/opt/ros/humble')]), 'shell': False}
+[19.673310] (-) TimerEvent: {}
+[19.675187] (livox_ros_driver2) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[19.675315] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/share/ament_index/resource_index/rosidl_interfaces/livox_ros_driver2\n'}
+[19.675460] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2\n'}
+[19.675556] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg\n'}
+[19.675616] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/custom_point.h\n'}
+[19.675682] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/rosidl_generator_c__visibility_control.h\n'}
+[19.675748] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail\n'}
+[19.675818] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_point__struct.h\n'}
+[19.675881] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_msg__struct.h\n'}
+[19.675939] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_point__functions.h\n'}
+[19.676008] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_msg__functions.h\n'}
+[19.676089] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_point__type_support.h\n'}
+[19.676167] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_msg__type_support.h\n'}
+[19.676244] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_msg__functions.c\n'}
+[19.676327] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_point__functions.c\n'}
+[19.676412] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/custom_msg.h\n'}
+[19.676577] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/environment/library_path.sh\n'}
+[19.676697] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/environment/library_path.dsv\n'}
+[19.676835] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/lib/liblivox_ros_driver2__rosidl_generator_c.so\n'}
+[19.677141] (livox_ros_driver2) StdoutLine: {'line': b'-- Set runtime path of "/root/nav2_ws/src/ws_livox/install/livox_ros_driver2/lib/liblivox_ros_driver2__rosidl_generator_c.so" to ""\n'}
+[19.677213] (livox_ros_driver2) StdoutLine: {'line': b'-- Up-to-date: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2\n'}
+[19.677262] (livox_ros_driver2) StdoutLine: {'line': b'-- Up-to-date: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg\n'}
+[19.677307] (livox_ros_driver2) StdoutLine: {'line': b'-- Up-to-date: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail\n'}
+[19.677376] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_point__rosidl_typesupport_fastrtps_c.h\n'}
+[19.677425] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_msg__rosidl_typesupport_fastrtps_c.h\n'}
+[19.677496] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[19.677625] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/lib/liblivox_ros_driver2__rosidl_typesupport_fastrtps_c.so\n'}
+[19.677921] (livox_ros_driver2) StdoutLine: {'line': b'-- Set runtime path of "/root/nav2_ws/src/ws_livox/install/livox_ros_driver2/lib/liblivox_ros_driver2__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[19.677980] (livox_ros_driver2) StdoutLine: {'line': b'-- Up-to-date: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2\n'}
+[19.678048] (livox_ros_driver2) StdoutLine: {'line': b'-- Up-to-date: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg\n'}
+[19.678095] (livox_ros_driver2) StdoutLine: {'line': b'-- Up-to-date: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail\n'}
+[19.678140] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_msg__rosidl_typesupport_introspection_c.h\n'}
+[19.678204] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_msg__type_support.c\n'}
+[19.678252] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_point__rosidl_typesupport_introspection_c.h\n'}
+[19.678315] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_point__type_support.c\n'}
+[19.678376] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[19.678441] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/lib/liblivox_ros_driver2__rosidl_typesupport_introspection_c.so\n'}
+[19.678691] (livox_ros_driver2) StdoutLine: {'line': b'-- Set runtime path of "/root/nav2_ws/src/ws_livox/install/livox_ros_driver2/lib/liblivox_ros_driver2__rosidl_typesupport_introspection_c.so" to ""\n'}
+[19.678753] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/lib/liblivox_ros_driver2__rosidl_typesupport_c.so\n'}
+[19.678960] (livox_ros_driver2) StdoutLine: {'line': b'-- Set runtime path of "/root/nav2_ws/src/ws_livox/install/livox_ros_driver2/lib/liblivox_ros_driver2__rosidl_typesupport_c.so" to ""\n'}
+[19.679014] (livox_ros_driver2) StdoutLine: {'line': b'-- Up-to-date: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2\n'}
+[19.679074] (livox_ros_driver2) StdoutLine: {'line': b'-- Up-to-date: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg\n'}
+[19.679119] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/custom_msg.hpp\n'}
+[19.679178] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/custom_point.hpp\n'}
+[19.679229] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[19.679294] (livox_ros_driver2) StdoutLine: {'line': b'-- Up-to-date: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail\n'}
+[19.679340] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_msg__struct.hpp\n'}
+[19.679399] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_point__struct.hpp\n'}
+[19.679467] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_msg__builder.hpp\n'}
+[19.679534] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_point__traits.hpp\n'}
+[19.679611] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_point__type_support.hpp\n'}
+[19.679683] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_point__builder.hpp\n'}
+[19.679755] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_msg__type_support.hpp\n'}
+[19.679833] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_msg__traits.hpp\n'}
+[19.679930] (livox_ros_driver2) StdoutLine: {'line': b'-- Up-to-date: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2\n'}
+[19.680006] (livox_ros_driver2) StdoutLine: {'line': b'-- Up-to-date: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg\n'}
+[19.680055] (livox_ros_driver2) StdoutLine: {'line': b'-- Up-to-date: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail\n'}
+[19.680104] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_point__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[19.680167] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/dds_fastrtps\n'}
+[19.680227] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_msg__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[19.680285] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[19.680345] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/lib/liblivox_ros_driver2__rosidl_typesupport_fastrtps_cpp.so\n'}
+[19.680636] (livox_ros_driver2) StdoutLine: {'line': b'-- Set runtime path of "/root/nav2_ws/src/ws_livox/install/livox_ros_driver2/lib/liblivox_ros_driver2__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[19.680704] (livox_ros_driver2) StdoutLine: {'line': b'-- Up-to-date: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2\n'}
+[19.680753] (livox_ros_driver2) StdoutLine: {'line': b'-- Up-to-date: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg\n'}
+[19.680825] (livox_ros_driver2) StdoutLine: {'line': b'-- Up-to-date: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail\n'}
+[19.680870] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_point__rosidl_typesupport_introspection_cpp.hpp\n'}
+[19.680914] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_msg__type_support.cpp\n'}
+[19.680967] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_point__type_support.cpp\n'}
+[19.681028] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_msg__rosidl_typesupport_introspection_cpp.hpp\n'}
+[19.681099] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/lib/liblivox_ros_driver2__rosidl_typesupport_introspection_cpp.so\n'}
+[19.681401] (livox_ros_driver2) StdoutLine: {'line': b'-- Set runtime path of "/root/nav2_ws/src/ws_livox/install/livox_ros_driver2/lib/liblivox_ros_driver2__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[19.681477] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/lib/liblivox_ros_driver2__rosidl_typesupport_cpp.so\n'}
+[19.681700] (livox_ros_driver2) StdoutLine: {'line': b'-- Set runtime path of "/root/nav2_ws/src/ws_livox/install/livox_ros_driver2/lib/liblivox_ros_driver2__rosidl_typesupport_cpp.so" to ""\n'}
+[19.681761] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/environment/pythonpath.sh\n'}
+[19.681830] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/environment/pythonpath.dsv\n'}
+[19.681922] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2-1.0.0-py3.10.egg-info\n'}
+[19.682018] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2-1.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[19.682092] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2-1.0.0-py3.10.egg-info/top_level.txt\n'}
+[19.682163] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2-1.0.0-py3.10.egg-info/PKG-INFO\n'}
+[19.682234] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2-1.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[19.682329] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2\n'}
+[19.682398] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/livox_ros_driver2_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[19.682492] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/liblivox_interfaces2__rosidl_generator_py.so\n'}
+[19.682580] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/msg\n'}
+[19.682642] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/msg/__init__.py\n'}
+[19.682707] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/msg/_custom_point_s.c\n'}
+[19.682786] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/msg/_custom_point.py\n'}
+[19.682864] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/msg/_custom_msg.py\n'}
+[19.682947] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/msg/_custom_msg_s.c\n'}
+[19.683026] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/livox_ros_driver2_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[19.683109] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/__init__.py\n'}
+[19.683175] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/_livox_ros_driver2_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[19.683251] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/_livox_ros_driver2_s.ep.rosidl_typesupport_c.c\n'}
+[19.683330] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/livox_ros_driver2_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[19.683413] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/_livox_ros_driver2_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[19.720730] (livox_ros_driver2) StdoutLine: {'line': b"Listing '/root/nav2_ws/src/ws_livox/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2'...\n"}
+[19.720892] (livox_ros_driver2) StdoutLine: {'line': b"Compiling '/root/nav2_ws/src/ws_livox/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/__init__.py'...\n"}
+[19.720959] (livox_ros_driver2) StdoutLine: {'line': b"Listing '/root/nav2_ws/src/ws_livox/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/msg'...\n"}
+[19.721010] (livox_ros_driver2) StdoutLine: {'line': b"Compiling '/root/nav2_ws/src/ws_livox/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/msg/__init__.py'...\n"}
+[19.721053] (livox_ros_driver2) StdoutLine: {'line': b"Compiling '/root/nav2_ws/src/ws_livox/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/msg/_custom_msg.py'...\n"}
+[19.721096] (livox_ros_driver2) StdoutLine: {'line': b"Compiling '/root/nav2_ws/src/ws_livox/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/msg/_custom_point.py'...\n"}
+[19.725148] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/livox_ros_driver2_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[19.725291] (livox_ros_driver2) StdoutLine: {'line': b'-- Set runtime path of "/root/nav2_ws/src/ws_livox/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/livox_ros_driver2_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[19.725378] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/livox_ros_driver2_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[19.725659] (livox_ros_driver2) StdoutLine: {'line': b'-- Set runtime path of "/root/nav2_ws/src/ws_livox/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/livox_ros_driver2_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[19.725766] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/livox_ros_driver2_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[19.725966] (livox_ros_driver2) StdoutLine: {'line': b'-- Set runtime path of "/root/nav2_ws/src/ws_livox/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/livox_ros_driver2_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[19.726034] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/lib/liblivox_interfaces2__rosidl_generator_py.so\n'}
+[19.726272] (livox_ros_driver2) StdoutLine: {'line': b'-- Set runtime path of "/root/nav2_ws/src/ws_livox/install/livox_ros_driver2/lib/liblivox_interfaces2__rosidl_generator_py.so" to ""\n'}
+[19.726348] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/msg/CustomPoint.idl\n'}
+[19.726457] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/msg/CustomMsg.idl\n'}
+[19.726682] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/msg/CustomPoint.msg\n'}
+[19.726793] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/msg/CustomMsg.msg\n'}
+[19.726863] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/lib/livox_ros_driver2/livox_ros_driver2_node\n'}
+[19.727252] (livox_ros_driver2) StdoutLine: {'line': b'-- Set runtime path of "/root/nav2_ws/src/ws_livox/install/livox_ros_driver2/lib/livox_ros_driver2/livox_ros_driver2_node" to ""\n'}
+[19.727317] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/lib/liblivox_ros_driver2.so\n'}
+[19.729862] (livox_ros_driver2) StdoutLine: {'line': b'-- Set runtime path of "/root/nav2_ws/src/ws_livox/install/livox_ros_driver2/lib/liblivox_ros_driver2.so" to ""\n'}
+[19.729958] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/config\n'}
+[19.730039] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/config/display_point_cloud_ROS1.rviz\n'}
+[19.730109] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/config/display_point_cloud_ROS2.rviz\n'}
+[19.730157] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/config/MID360_config.json\n'}
+[19.730223] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/config/mixed_HAP_MID360_config.json\n'}
+[19.730285] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/config/HAP_config.json\n'}
+[19.730346] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/launch_ROS2\n'}
+[19.730413] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/launch_ROS2/rviz_MID360_launch.py\n'}
+[19.730489] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/launch_ROS2/rviz_mixed.py\n'}
+[19.730551] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/launch_ROS2/rviz_HAP_launch.py\n'}
+[19.730614] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/launch_ROS2/msg_MID360_launch.py\n'}
+[19.730677] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/launch_ROS2/msg_HAP_launch.py\n'}
+[19.730795] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/share/ament_index/resource_index/package_run_dependencies/livox_ros_driver2\n'}
+[19.730921] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/share/ament_index/resource_index/parent_prefix_path/livox_ros_driver2\n'}
+[19.731081] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/environment/ament_prefix_path.sh\n'}
+[19.731143] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/environment/ament_prefix_path.dsv\n'}
+[19.731234] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/environment/path.sh\n'}
+[19.731333] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/environment/path.dsv\n'}
+[19.731426] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/local_setup.bash\n'}
+[19.731523] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/local_setup.sh\n'}
+[19.731614] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/local_setup.zsh\n'}
+[19.731703] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/local_setup.dsv\n'}
+[19.731793] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/package.dsv\n'}
+[19.731915] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/share/ament_index/resource_index/packages/livox_ros_driver2\n'}
+[19.732042] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/cmake/export_livox_interfaces2__rosidl_generator_cExport.cmake\n'}
+[19.732140] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/cmake/export_livox_interfaces2__rosidl_generator_cExport-noconfig.cmake\n'}
+[19.732246] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/cmake/export_livox_interfaces2__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[19.732350] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/cmake/export_livox_interfaces2__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[19.732467] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/cmake/livox_interfaces2__rosidl_typesupport_introspection_cExport.cmake\n'}
+[19.732565] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/cmake/livox_interfaces2__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[19.732667] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/cmake/livox_interfaces2__rosidl_typesupport_cExport.cmake\n'}
+[19.732771] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/cmake/livox_interfaces2__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[19.732873] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/cmake/export_livox_interfaces2__rosidl_generator_cppExport.cmake\n'}
+[19.732977] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/cmake/export_livox_interfaces2__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[19.733081] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/cmake/export_livox_interfaces2__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[19.733185] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/cmake/livox_interfaces2__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[19.733281] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/cmake/livox_interfaces2__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[19.733389] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/cmake/livox_interfaces2__rosidl_typesupport_cppExport.cmake\n'}
+[19.733506] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/cmake/livox_interfaces2__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[19.733615] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/cmake/export_livox_interfaces2__rosidl_generator_pyExport.cmake\n'}
+[19.733711] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/cmake/export_livox_interfaces2__rosidl_generator_pyExport-noconfig.cmake\n'}
+[19.733838] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/share/ament_index/resource_index/rclcpp_components/livox_ros_driver2\n'}
+[19.733935] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/cmake/rosidl_cmake-extras.cmake\n'}
+[19.734028] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[19.734125] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[19.734219] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[19.734313] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[19.734407] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[19.734507] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[19.734616] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/cmake/livox_ros_driver2Config.cmake\n'}
+[19.734695] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/cmake/livox_ros_driver2Config-version.cmake\n'}
+[19.734783] (livox_ros_driver2) StdoutLine: {'line': b'-- Installing: /root/nav2_ws/src/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/package.xml\n'}
+[19.736662] (livox_ros_driver2) CommandEnded: {'returncode': 0}
+[19.754222] (livox_ros_driver2) JobEnded: {'identifier': 'livox_ros_driver2', 'rc': 0}
+[19.754859] (-) EventReactorShutdown: {}

@@ -1,0 +1,7 @@
+[01m[K/root/nav2_ws/src/ws_livox/src/livox_ros_driver2/src/lddc.cpp:[m[K In member function ‘[01m[Kstd::shared_ptr<rclcpp::PublisherBase> livox_ros::Lddc::CreatePublisher(uint8_t, std::string&, uint32_t)[m[K’:
+[01m[K/root/nav2_ws/src/ws_livox/src/livox_ros_driver2/src/lddc.cpp:536:65:[m[K [01;31m[Kerror: [m[K‘[01m[Kqos_profile[m[K’ was not declared in this scope
+  536 |       return cur_node_->create_publisher<CustomMsg>(topic_name, [01;31m[Kqos_profile[m[K);
+      |                                                                 [01;31m[K^~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/livox_ros_driver2.dir/build.make:90: CMakeFiles/livox_ros_driver2.dir/src/lddc.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:595: CMakeFiles/livox_ros_driver2.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

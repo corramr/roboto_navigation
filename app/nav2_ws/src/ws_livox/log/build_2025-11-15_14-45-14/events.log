@@ -1,0 +1,148 @@
+[0.000000] (-) TimerEvent: {}
+[0.000500] (livox_ros_driver2) JobQueued: {'identifier': 'livox_ros_driver2', 'dependencies': OrderedDict()}
+[0.000526] (livox_ros_driver2) JobStarted: {'identifier': 'livox_ros_driver2'}
+[0.013350] (livox_ros_driver2) JobProgress: {'identifier': 'livox_ros_driver2', 'progress': 'cmake'}
+[0.013767] (livox_ros_driver2) Command: {'cmd': ['/usr/bin/cmake', '/root/nav2_ws/src/ws_livox/src/livox_ros_driver2', '-DROS_EDITION=ROS2', '-DHUMBLE_ROS=humble', '-DCMAKE_INSTALL_PREFIX=/root/nav2_ws/src/ws_livox/install/livox_ros_driver2'], 'cwd': '/root/nav2_ws/src/ws_livox/build/livox_ros_driver2', 'env': OrderedDict([('HOSTNAME', 'corra-IdeaPad-3-15IIL05'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/root/nav2_ws/install/pointcloud_to_laserscan/lib:/root/nav2_ws/install/nav2_smoother/lib:/root/nav2_ws/install/nav2_rotation_shim_controller/lib:/root/nav2_ws/install/nav2_graceful_controller/lib:/root/nav2_ws/install/nav2_controller/lib:/root/nav2_ws/install/dwb_plugins/lib:/root/nav2_ws/install/dwb_critics/lib:/root/nav2_ws/install/dwb_core/lib:/root/nav2_ws/install/nav_2d_utils/lib:/root/nav2_ws/install/dwb_msgs/lib:/root/nav2_ws/install/nav_2d_msgs/lib:/root/nav2_ws/install/nav2_waypoint_follower/lib:/root/nav2_ws/install/nav2_theta_star_planner/lib:/root/nav2_ws/install/nav2_smac_planner/lib:/root/nav2_ws/install/nav2_route/lib:/root/nav2_ws/install/nav2_regulated_pure_pursuit_controller/lib:/root/nav2_ws/install/nav2_planner/lib:/root/nav2_ws/install/nav2_navfn_planner/lib:/root/nav2_ws/install/nav2_mppi_controller/lib:/root/nav2_ws/install/nav2_constrained_smoother/lib:/root/nav2_ws/install/nav2_bt_navigator/lib:/root/nav2_ws/install/nav2_behaviors/lib:/root/nav2_ws/install/nav2_collision_monitor/lib:/root/nav2_ws/install/costmap_queue/lib:/root/nav2_ws/install/nav2_costmap_2d/lib:/root/nav2_ws/install/nav2_voxel_grid/lib:/root/nav2_ws/install/nav2_velocity_smoother/lib:/root/nav2_ws/install/nav2_rviz_plugins/lib:/root/nav2_ws/install/nav2_map_server/lib:/root/nav2_ws/install/nav2_lifecycle_manager/lib:/root/nav2_ws/install/nav2_behavior_tree/lib:/root/nav2_ws/install/nav2_amcl/lib:/root/nav2_ws/install/nav2_util/lib:/root/nav2_ws/install/nav2_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/root/nav2_ws/src/ws_livox/src/livox_ros_driver2'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/root/nav2_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', 'ROS2'), ('TERM', 'xterm'), ('GAZEBO_MODEL_PATH', ':/root/initialize/tb3_gazebo_models'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/root/nav2_ws/install/sensor_launcher:/root/nav2_ws/install/unitree_lidar_ros2:/root/nav2_ws/install/pointcloud_to_laserscan:/root/nav2_ws/install/nav2_system_tests:/root/nav2_ws/install/nav2_bringup:/root/nav2_ws/install/navigation2:/root/nav2_ws/install/nav2_smoother:/root/nav2_ws/install/nav2_rotation_shim_controller:/root/nav2_ws/install/nav2_graceful_controller:/root/nav2_ws/install/nav2_dwb_controller:/root/nav2_ws/install/nav2_controller:/root/nav2_ws/install/dwb_plugins:/root/nav2_ws/install/dwb_critics:/root/nav2_ws/install/dwb_core:/root/nav2_ws/install/nav_2d_utils:/root/nav2_ws/install/dwb_msgs:/root/nav2_ws/install/nav_2d_msgs:/root/nav2_ws/install/nav2_waypoint_follower:/root/nav2_ws/install/nav2_theta_star_planner:/root/nav2_ws/install/nav2_smac_planner:/root/nav2_ws/install/nav2_route:/root/nav2_ws/install/nav2_regulated_pure_pursuit_controller:/root/nav2_ws/install/nav2_planner:/root/nav2_ws/install/nav2_navfn_planner:/root/nav2_ws/install/nav2_mppi_controller:/root/nav2_ws/install/nav2_constrained_smoother:/root/nav2_ws/install/nav2_bt_navigator:/root/nav2_ws/install/nav2_behaviors:/root/nav2_ws/install/nav2_core:/root/nav2_ws/install/nav2_collision_monitor:/root/nav2_ws/install/costmap_queue:/root/nav2_ws/install/nav2_costmap_2d:/root/nav2_ws/install/nav2_voxel_grid:/root/nav2_ws/install/nav2_velocity_smoother:/root/nav2_ws/install/nav2_rviz_plugins:/root/nav2_ws/install/nav2_map_server:/root/nav2_ws/install/nav2_lifecycle_manager:/root/nav2_ws/install/nav2_behavior_tree:/root/nav2_ws/install/nav2_amcl:/root/nav2_ws/install/nav2_util:/root/nav2_ws/install/nav2_simple_commander:/root/nav2_ws/install/nav2_odom_to_tf:/root/nav2_ws/install/nav2_msgs:/root/nav2_ws/install/nav2_common:/root/nav2_ws/install/lidar_odometry:/opt/ros/humble'), ('PWD', '/root/nav2_ws/src/ws_livox/build/livox_ros_driver2'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/root/nav2_ws/install/sensor_launcher/lib/python3.10/site-packages:/root/nav2_ws/install/dwb_msgs/local/lib/python3.10/dist-packages:/root/nav2_ws/install/nav_2d_msgs/local/lib/python3.10/dist-packages:/root/nav2_ws/build/nav2_simple_commander:/root/nav2_ws/install/nav2_simple_commander/lib/python3.10/site-packages:/root/nav2_ws/install/nav2_odom_to_tf/lib/python3.10/site-packages:/root/nav2_ws/install/nav2_msgs/local/lib/python3.10/dist-packages:/root/nav2_ws/install/nav2_common/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/root/nav2_ws/install/unitree_lidar_ros2:/root/nav2_ws/install/pointcloud_to_laserscan:/root/nav2_ws/install/nav2_system_tests:/root/nav2_ws/install/nav2_bringup:/root/nav2_ws/install/navigation2:/root/nav2_ws/install/nav2_smoother:/root/nav2_ws/install/nav2_rotation_shim_controller:/root/nav2_ws/install/nav2_graceful_controller:/root/nav2_ws/install/nav2_dwb_controller:/root/nav2_ws/install/nav2_controller:/root/nav2_ws/install/dwb_plugins:/root/nav2_ws/install/dwb_critics:/root/nav2_ws/install/dwb_core:/root/nav2_ws/install/nav_2d_utils:/root/nav2_ws/install/dwb_msgs:/root/nav2_ws/install/nav_2d_msgs:/root/nav2_ws/install/nav2_waypoint_follower:/root/nav2_ws/install/nav2_theta_star_planner:/root/nav2_ws/install/nav2_smac_planner:/root/nav2_ws/install/nav2_route:/root/nav2_ws/install/nav2_regulated_pure_pursuit_controller:/root/nav2_ws/install/nav2_planner:/root/nav2_ws/install/nav2_navfn_planner:/root/nav2_ws/install/nav2_mppi_controller:/root/nav2_ws/install/nav2_constrained_smoother:/root/nav2_ws/install/nav2_bt_navigator:/root/nav2_ws/install/nav2_behaviors:/root/nav2_ws/install/nav2_core:/root/nav2_ws/install/nav2_collision_monitor:/root/nav2_ws/install/costmap_queue:/root/nav2_ws/install/nav2_costmap_2d:/root/nav2_ws/install/nav2_voxel_grid:/root/nav2_ws/install/nav2_velocity_smoother:/root/nav2_ws/install/nav2_rviz_plugins:/root/nav2_ws/install/nav2_map_server:/root/nav2_ws/install/nav2_lifecycle_manager:/root/nav2_ws/install/nav2_behavior_tree:/root/nav2_ws/install/nav2_amcl:/root/nav2_ws/install/nav2_util:/root/nav2_ws/install/nav2_msgs:/root/nav2_ws/install/nav2_common:/root/nav2_ws/install/lidar_odometry:/root/nav2_ws/install/sensor_launcher:/root/nav2_ws/install/nav2_simple_commander:/root/nav2_ws/install/nav2_odom_to_tf:/opt/ros/humble')]), 'shell': False}
+[0.099951] (-) TimerEvent: {}
+[0.155103] (livox_ros_driver2) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.200094] (-) TimerEvent: {}
+[0.241151] (livox_ros_driver2) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.250491] (livox_ros_driver2) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.300254] (-) TimerEvent: {}
+[0.346497] (livox_ros_driver2) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.352894] (livox_ros_driver2) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.354352] (livox_ros_driver2) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.355010] (livox_ros_driver2) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.357893] (livox_ros_driver2) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.400383] (-) TimerEvent: {}
+[0.454113] (livox_ros_driver2) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.460475] (livox_ros_driver2) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.460749] (livox_ros_driver2) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.461198] (livox_ros_driver2) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.461860] (livox_ros_driver2) StdoutLine: {'line': b'-- livox_ros_driver2 version: 1.2.4\n'}
+[0.470517] (livox_ros_driver2) StdoutLine: {'line': b'-- Found ament_cmake_auto: 1.3.12 (/opt/ros/humble/share/ament_cmake_auto/cmake)\n'}
+[0.500489] (-) TimerEvent: {}
+[0.600748] (-) TimerEvent: {}
+[0.639618] (livox_ros_driver2) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.700894] (-) TimerEvent: {}
+[0.801169] (-) TimerEvent: {}
+[0.859214] (livox_ros_driver2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.880379] (livox_ros_driver2) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.901313] (-) TimerEvent: {}
+[0.967141] (livox_ros_driver2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.001460] (-) TimerEvent: {}
+[1.101794] (-) TimerEvent: {}
+[1.143098] (livox_ros_driver2) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.151920] (livox_ros_driver2) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.201940] (-) TimerEvent: {}
+[1.293610] (livox_ros_driver2) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[1.302070] (-) TimerEvent: {}
+[1.328437] (livox_ros_driver2) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[1.383585] (livox_ros_driver2) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.402212] (-) TimerEvent: {}
+[1.405709] (livox_ros_driver2) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.500305] (livox_ros_driver2) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.500496] (livox_ros_driver2) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.502300] (-) TimerEvent: {}
+[1.589844] (livox_ros_driver2) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.590758] (livox_ros_driver2) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.602454] (-) TimerEvent: {}
+[1.702767] (-) TimerEvent: {}
+[1.803166] (-) TimerEvent: {}
+[1.817151] (livox_ros_driver2) StdoutLine: {'line': b"-- Checking for module 'eigen3'\n"}
+[1.837939] (livox_ros_driver2) StdoutLine: {'line': b'--   Found eigen3, version 3.4.0\n'}
+[1.882730] (livox_ros_driver2) StdoutLine: {'line': b'-- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") \n'}
+[1.882883] (livox_ros_driver2) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[1.903318] (-) TimerEvent: {}
+[1.962462] (livox_ros_driver2) StdoutLine: {'line': b"-- Checking for module 'flann'\n"}
+[1.979793] (livox_ros_driver2) StdoutLine: {'line': b'--   Found flann, version 1.9.1\n'}
+[2.003460] (-) TimerEvent: {}
+[2.030006] (livox_ros_driver2) StdoutLine: {'line': b'-- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  \n'}
+[2.030200] (livox_ros_driver2) StdoutLine: {'line': b'-- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)\n'}
+[2.103575] (-) TimerEvent: {}
+[2.203932] (-) TimerEvent: {}
+[2.304348] (-) TimerEvent: {}
+[2.404636] (-) TimerEvent: {}
+[2.504899] (-) TimerEvent: {}
+[2.605173] (-) TimerEvent: {}
+[2.705576] (-) TimerEvent: {}
+[2.805880] (-) TimerEvent: {}
+[2.906173] (-) TimerEvent: {}
+[3.006472] (-) TimerEvent: {}
+[3.106840] (-) TimerEvent: {}
+[3.207125] (-) TimerEvent: {}
+[3.223326] (livox_ros_driver2) StdoutLine: {'line': b"-- Checking for module 'libusb-1.0'\n"}
+[3.248547] (livox_ros_driver2) StdoutLine: {'line': b'--   Found libusb-1.0, version 1.0.25\n'}
+[3.298260] (livox_ros_driver2) StdoutLine: {'line': b'-- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  \n'}
+[3.300772] (livox_ros_driver2) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[3.307236] (-) TimerEvent: {}
+[3.400991] (livox_ros_driver2) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[3.407338] (-) TimerEvent: {}
+[3.507557] (-) TimerEvent: {}
+[3.545665] (livox_ros_driver2) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[3.552510] (livox_ros_driver2) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[3.559176] (livox_ros_driver2) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[3.607704] (-) TimerEvent: {}
+[3.706820] (livox_ros_driver2) StdoutLine: {'line': b'-- Found Qhull version 8.0.2\n'}
+[3.707766] (-) TimerEvent: {}
+[3.807998] (-) TimerEvent: {}
+[3.844536] (livox_ros_driver2) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[3.908148] (-) TimerEvent: {}
+[3.976388] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  \n'}
+[3.977080] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  \n'}
+[3.977784] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  \n'}
+[3.978497] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  \n'}
+[3.979311] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  \n'}
+[3.980001] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  \n'}
+[3.980292] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_2D: /usr/include/pcl-1.12  \n'}
+[3.980684] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_GEOMETRY: /usr/include/pcl-1.12  \n'}
+[3.981398] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  \n'}
+[3.982230] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  \n'}
+[3.983045] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  \n'}
+[3.983785] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  \n'}
+[3.984592] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  \n'}
+[3.985394] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  \n'}
+[3.986167] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  \n'}
+[3.986939] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  \n'}
+[3.987782] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  \n'}
+[3.988538] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  \n'}
+[3.989484] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  \n'}
+[3.990215] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  \n'}
+[3.990934] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  \n'}
+[3.991282] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_MODELER: /usr/include/pcl-1.12  \n'}
+[3.999467] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  \n'}
+[4.000723] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  \n'}
+[4.001515] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  \n'}
+[4.008245] (-) TimerEvent: {}
+[4.066455] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") \n'}
+[4.067353] (livox_ros_driver2) StdoutLine: {'line': b"-- Checking for module 'apr-1'\n"}
+[4.071419] (livox_ros_driver2) StdoutLine: {'line': b"--   No package 'apr-1' found\n"}
+[4.108400] (-) TimerEvent: {}
+[4.208663] (-) TimerEvent: {}
+[4.276793] (livox_ros_driver2) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[4.308797] (-) TimerEvent: {}
+[4.409040] (-) TimerEvent: {}
+[4.491966] (livox_ros_driver2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[4.509155] (-) TimerEvent: {}
+[4.609394] (-) TimerEvent: {}
+[4.709721] (-) TimerEvent: {}
+[4.756423] (livox_ros_driver2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[4.780026] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[4.786334] (livox_ros_driver2) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[4.809769] (-) TimerEvent: {}
+[4.812583] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[4.812733] (livox_ros_driver2) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[4.812779] (livox_ros_driver2) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[4.812819] (livox_ros_driver2) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[4.833724] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[4.901347] (livox_ros_driver2) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:249 (find_library):\n'}
+[4.901588] (livox_ros_driver2) StderrLine: {'line': b'  Could not find LIVOX_LIDAR_SDK_LIBRARY using the following names:\n'}
+[4.901711] (livox_ros_driver2) StderrLine: {'line': b'  liblivox_lidar_sdk_shared.so, /usr/local/lib\n'}
+[4.901758] (livox_ros_driver2) StderrLine: {'line': b'\n'}
+[4.901796] (livox_ros_driver2) StderrLine: {'line': b'\x1b[0m\n'}
+[4.901838] (livox_ros_driver2) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[4.901885] (livox_ros_driver2) StdoutLine: {'line': b'See also "/root/nav2_ws/src/ws_livox/build/livox_ros_driver2/CMakeFiles/CMakeOutput.log".\n'}
+[4.909869] (-) TimerEvent: {}
+[4.915376] (livox_ros_driver2) CommandEnded: {'returncode': 1}
+[4.940219] (livox_ros_driver2) JobEnded: {'identifier': 'livox_ros_driver2', 'rc': 1}
+[4.950870] (-) EventReactorShutdown: {}

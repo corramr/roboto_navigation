@@ -1,0 +1,32 @@
+[  1%] Built target livox_interfaces2__cpp
+[  5%] Built target livox_ros_driver2_node
+[ 12%] Built target livox_interfaces2__rosidl_generator_c
+[ 12%] Built target ament_cmake_python_copy_livox_ros_driver2
+[ 19%] Built target livox_interfaces2__rosidl_typesupport_introspection_cpp
+[ 26%] Built target livox_interfaces2__rosidl_typesupport_cpp
+[ 33%] Built target livox_interfaces2__rosidl_typesupport_fastrtps_cpp
+[ 47%] Built target livox_interfaces2__rosidl_typesupport_c
+[ 47%] Built target livox_interfaces2__rosidl_typesupport_introspection_c
+[ 54%] Built target livox_interfaces2__rosidl_typesupport_fastrtps_c
+[35m[1mConsolidate compiler generated dependencies of target livox_ros_driver2[0m
+[ 54%] Built target livox_interfaces2
+[ 56%] Built target livox_interfaces2__py
+[ 57%] [32mBuilding CXX object CMakeFiles/livox_ros_driver2.dir/src/lddc.cpp.o[0m
+[ 63%] Built target livox_interfaces2__rosidl_generator_py
+[ 66%] Built target livox_ros_driver2__rosidl_typesupport_introspection_c__pyext
+[ 70%] Built target livox_ros_driver2__rosidl_typesupport_c__pyext
+[ 73%] Built target livox_ros_driver2__rosidl_typesupport_fastrtps_c__pyext
+running egg_info
+writing livox_ros_driver2.egg-info/PKG-INFO
+writing dependency_links to livox_ros_driver2.egg-info/dependency_links.txt
+writing top-level names to livox_ros_driver2.egg-info/top_level.txt
+reading manifest file 'livox_ros_driver2.egg-info/SOURCES.txt'
+writing manifest file 'livox_ros_driver2.egg-info/SOURCES.txt'
+[ 73%] Built target ament_cmake_python_build_livox_ros_driver2_egg
+[01m[K/root/nav2_ws/src/ws_livox/src/livox_ros_driver2/src/lddc.cpp:[m[K In member function ‘[01m[Kstd::shared_ptr<rclcpp::PublisherBase> livox_ros::Lddc::CreatePublisher(uint8_t, std::string&, uint32_t)[m[K’:
+[01m[K/root/nav2_ws/src/ws_livox/src/livox_ros_driver2/src/lddc.cpp:536:65:[m[K [01;31m[Kerror: [m[K‘[01m[Kqos_profile[m[K’ was not declared in this scope
+  536 |       return cur_node_->create_publisher<CustomMsg>(topic_name, [01;31m[Kqos_profile[m[K);
+      |                                                                 [01;31m[K^~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/livox_ros_driver2.dir/build.make:90: CMakeFiles/livox_ros_driver2.dir/src/lddc.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:595: CMakeFiles/livox_ros_driver2.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
