@@ -1,0 +1,35 @@
+TASK: TUNE AND TEST AMCL COMPONENT in ROS2
+MEMBERS: NIK, GIANLU, (DARIO, KOR)
+EXPECTATION: Localization component must be working!
+DEADLINE: 27/02/26
+
+- read the readMe file and the notes (I added some extra content at the bottom in the notes)
+- review the AMCL components by yourself to make sure you have everything that is requested by this components (my notes may be no enough)
+  (but do NOT spend time to study in depth how the particle filter algorithm works, IT'S POINTLESS)
+
+- run the launch file of sensor launcher
+- to make sure that the sensor launcher is runnig properly, the /scan and /odom topic must make sense (use RVIZ)
+- understand and inspects the main topics published (/scan, /odom, /livox/lidar, /tf, /tf_static) to get a grasp of what sensor launcher does 
+
+- run the turtlebot example, but before make sure to have done the following:
+  1) IMPO: you need to disable the turtlebot /odom, /scan and some other stuff (these will be injected by the sensor launcher) (see the readMe file)
+  2) configure properly the yaml file (nav2_ws/src/navigation2/nav2_bringup/params/nav2_params.yaml), in particular the AMCL section
+  3) make sure all the trasformation between frames make sense (watch out the base_scan trasformation wrt base_link and base_link wrt base_footprint)
+  4) understand where nav2 gets its turtlebot map, remove it and inject the model of your own map
+  
+- build a map in the lab (be smart in doing that, so that you can mount and unmount the map easily)
+- introduce some feature in the map, do NOT make a simple square. A richer map facilitates the job of AMCL.
+- you do not need the robot up to know. Just take a cart, place on it the lidar connected to a battery and to your labtop.
+
+Once localization is okay we will move on!
+
+
+
+
+
+TASK: FIXING ODOMETRY (ODOMETRY IS NOT PUBLISHING VELOCITIES)
+MEMBERS: DARIO, KOR
+
+I had a quick look at the output of sensor launcher package in particual at the /odom topic. While the pose looks like it's working properly I notice that the twist (velocity) part of the message is 0. We need to fix this because while for the localization component is not necessary (since we need the pose of the odometry), it's going to be vital for the controller component. It may be a stupid mistake, maybe the twist gets published but I couldn't see it due to the floating point precision, I do not know but you need to investigate on this. 
+
+- run the sensor launcher package and inspect the /odom topic. If you realize that the velocities are not truly published you need to fix this.

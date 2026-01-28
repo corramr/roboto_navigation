@@ -90,7 +90,7 @@
             <initial_orientation_as_reference>false</initial_orientation_as_reference>
             <ros>
               <!-- <namespace>/tb3</namespace> -->
-              <remapping>~/out:=imu</remapping>
+              <remapping>~/out:=imu_dummy</remapping>
             </ros>
           </plugin>
         </sensor>
@@ -158,7 +158,7 @@
           <plugin name="turtlebot3_laserscan" filename="libgazebo_ros_ray_sensor.so">
             <ros>
                 <!-- <namespace>/tb3</namespace> -->
-                <remapping>~/out:=scan</remapping>
+                <remapping>~/out:=scan_dummy</remapping>
             </ros>
             <output_type>sensor_msgs/LaserScan</output_type>
             <frame_name>base_scan</frame_name>
@@ -480,11 +480,11 @@
         <command_topic>cmd_vel</command_topic>
 
         <!-- output -->
-        <publish_odom>true</publish_odom>
-        <publish_odom_tf>true</publish_odom_tf>
+        <publish_odom>false</publish_odom>
+        <publish_odom_tf>false</publish_odom_tf>
         <publish_wheel_tf>false</publish_wheel_tf>
 
-        <odometry_topic>odom</odometry_topic>
+        <odometry_topic>odom_dummy</odometry_topic>
         <odometry_frame>odom</odometry_frame>
         <robot_base_frame>base_footprint</robot_base_frame>
 
