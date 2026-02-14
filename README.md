@@ -47,20 +47,20 @@ xhost +local:docker
 From the repository root directory:
 
 ```bash
-docker build -t corra09/nav2_docker:dev .
+sudo docker build -t roboto/navigation .
 ```
 
 ### 2. Run the Docker Container
 
 ```bash
-docker run -it --privileged --net=host \
+sudo docker run -it --privileged --net=host \
   --env="DISPLAY=$DISPLAY" \
   --env="QT_X11_NO_MITSHM=1" \
   --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" \
   --volume="./app/nav2_ws/src:/root/nav2_ws/src" \
   --volume="./app/initialize:/root/initialize" \
   --device /dev/dri:/dev/dri \
-  corra09/nav2_docker:dev
+  roboto/navigation
 ```
 
 > **Note:** Some options may need adjustment depending on your system configuration.
