@@ -1,0 +1,315 @@
+<?xml version="1.0" ?>
+<sdf version="1.7">
+  <model name="sentry_robot">
+    <static>false</static>
+
+    <link name="base_footprint">
+      <pose>0 0 0 0 0 0</pose>
+    </link>
+
+    <joint name="base_joint" type="fixed">
+      <parent>base_footprint</parent>
+      <child>base_link</child>
+    </joint>
+
+    <link name="base_link">
+      <pose>0 0 0.06 0 0 0</pose>
+      <inertial>
+        <pose>0 0 0.20 0 0 0</pose>
+        <mass>15.0</mass>
+        <inertia>
+          <ixx>0.5375</ixx> <ixy>0.0</ixy> <ixz>0.0</ixz>
+          <iyy>0.5375</iyy> <iyz>0.0</iyz> <izz>0.675</izz>
+        </inertia>
+      </inertial>
+      <collision name="base_collision">
+        <pose>0 0 0.20 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.30</radius>
+            <length>0.40</length>
+          </cylinder>
+        </geometry>
+      </collision>
+      <visual name="base_visual">
+        <pose>0 0 0.20 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.30</radius>
+            <length>0.40</length>
+          </cylinder>
+        </geometry>
+      </visual>
+    </link>
+
+    <link name="wheel_front_link">
+      <pose relative_to="base_link">0.25 0 0.0 0 1.570796 0</pose>
+      <inertial>
+        <mass>0.5</mass>
+        <inertia>
+          <ixx>0.000516</ixx> <ixy>0.0</ixy> <ixz>0.0</ixz>
+          <iyy>0.000516</iyy> <iyz>0.0</iyz> <izz>0.0009</izz>
+        </inertia>
+      </inertial>
+      <collision name="wheel_front_collision">
+        <geometry>
+          <cylinder>
+            <radius>0.06</radius>
+            <length>0.04</length>
+          </cylinder>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>0.0</mu>
+              <mu2>0.0</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name="wheel_front_visual">
+        <geometry>
+          <cylinder>
+            <radius>0.06</radius>
+            <length>0.04</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Black</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+    <joint name="wheel_front_joint" type="revolute">
+      <parent>base_link</parent>
+      <child>wheel_front_link</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+      </axis>
+    </joint>
+
+    <link name="wheel_back_link">
+      <pose relative_to="base_link">-0.25 0 0.0 0 1.570796 0</pose>
+      <inertial>
+        <mass>0.5</mass>
+        <inertia>
+          <ixx>0.000516</ixx> <ixy>0.0</ixy> <ixz>0.0</ixz>
+          <iyy>0.000516</iyy> <iyz>0.0</iyz> <izz>0.0009</izz>
+        </inertia>
+      </inertial>
+      <collision name="wheel_back_collision">
+        <geometry>
+          <cylinder>
+            <radius>0.06</radius>
+            <length>0.04</length>
+          </cylinder>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>0.0</mu>
+              <mu2>0.0</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name="wheel_back_visual">
+        <geometry>
+          <cylinder>
+            <radius>0.06</radius>
+            <length>0.04</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Black</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+    <joint name="wheel_back_joint" type="revolute">
+      <parent>base_link</parent>
+      <child>wheel_back_link</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+      </axis>
+    </joint>
+
+    <link name="wheel_left_link">
+      <pose relative_to="base_link">0 0.25 0.0 -1.570796 0 0</pose>
+      <inertial>
+        <mass>0.5</mass>
+        <inertia>
+          <ixx>0.000516</ixx> <ixy>0.0</ixy> <ixz>0.0</ixz>
+          <iyy>0.000516</iyy> <iyz>0.0</iyz> <izz>0.0009</izz>
+        </inertia>
+      </inertial>
+      <collision name="wheel_left_collision">
+        <geometry>
+          <cylinder>
+            <radius>0.06</radius>
+            <length>0.04</length>
+          </cylinder>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>0.0</mu>
+              <mu2>0.0</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name="wheel_left_visual">
+        <geometry>
+          <cylinder>
+            <radius>0.06</radius>
+            <length>0.04</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Black</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+    <joint name="wheel_left_joint" type="revolute">
+      <parent>base_link</parent>
+      <child>wheel_left_link</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+      </axis>
+    </joint>
+
+    <link name="wheel_right_link">
+      <pose relative_to="base_link">0 -0.25 0.0 -1.570796 0 0</pose>
+      <inertial>
+        <mass>0.5</mass>
+        <inertia>
+          <ixx>0.000516</ixx> <ixy>0.0</ixy> <ixz>0.0</ixz>
+          <iyy>0.000516</iyy> <iyz>0.0</iyz> <izz>0.0009</izz>
+        </inertia>
+      </inertial>
+      <collision name="wheel_right_collision">
+        <geometry>
+          <cylinder>
+            <radius>0.06</radius>
+            <length>0.04</length>
+          </cylinder>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>0.0</mu>
+              <mu2>0.0</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name="wheel_right_visual">
+        <geometry>
+          <cylinder>
+            <radius>0.06</radius>
+            <length>0.04</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Black</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+    <joint name="wheel_right_joint" type="revolute">
+      <parent>base_link</parent>
+      <child>wheel_right_link</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+      </axis>
+    </joint>
+
+    <link name="lidar_link">
+      <pose relative_to="base_link">0 0 0.45 0 0 0</pose>
+      <inertial>
+        <mass>0.5</mass>
+        <inertia>
+          <ixx>0.000729</ixx> <ixy>0.0</ixy> <ixz>0.0</ixz>
+          <iyy>0.000729</iyy> <iyz>0.0</iyz> <izz>0.000625</izz>
+        </inertia>
+      </inertial>
+      <collision name="lidar_collision">
+        <geometry>
+          <cylinder>
+            <radius>0.05</radius>
+            <length>0.1</length>
+          </cylinder>
+        </geometry>
+      </collision>
+      <visual name="lidar_visual">
+        <geometry>
+          <cylinder>
+            <radius>0.05</radius>
+            <length>0.1</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Blue</name>
+          </script>
+        </material>
+      </visual>
+      
+      <sensor name="lidar_sensor" type="ray">
+        <pose>0 0 0 0 0 0</pose>
+        <always_on>true</always_on>
+        <visualize>true</visualize>
+        <update_rate>10</update_rate>
+        <ray>
+          <scan>
+            <horizontal>
+              <samples>360</samples>
+              <resolution>1.0</resolution>
+              <min_angle>-3.14159</min_angle>
+              <max_angle>3.14159</max_angle>
+            </horizontal>
+          </scan>
+          <range>
+            <min>0.15</min>
+            <max>12.0</max>
+            <resolution>0.015</resolution>
+          </range>
+        </ray>
+        <plugin name="sentry_laserscan" filename="libgazebo_ros_ray_sensor.so">
+          <ros>
+            <remapping>~/out:=scan</remapping>
+          </ros>
+          <output_type>sensor_msgs/LaserScan</output_type>
+          <frame_name>lidar_link</frame_name>
+        </plugin>
+      </sensor>
+    </link>
+    <joint name="lidar_joint" type="fixed">
+      <parent>base_link</parent>
+      <child>lidar_link</child>
+    </joint>
+
+    <plugin name="omni_steering" filename="libgazebo_ros_planar_move.so">
+      <ros>
+        <remapping>cmd_vel:=cmd_vel</remapping>
+        <remapping>odom:=odom</remapping>
+      </ros>
+      <update_rate>50.0</update_rate>
+      <publish_rate>50.0</publish_rate>
+      <publish_odom>true</publish_odom>
+      <publish_odom_tf>true</publish_odom_tf>
+      <odometry_frame>odom</odometry_frame>
+      <robot_base_frame>base_footprint</robot_base_frame>
+      <covariance_x>0.0001</covariance_x>
+      <covariance_y>0.0001</covariance_y>
+      <covariance_yaw>0.01</covariance_yaw>
+    </plugin>
+
+  </model>
+</sdf>

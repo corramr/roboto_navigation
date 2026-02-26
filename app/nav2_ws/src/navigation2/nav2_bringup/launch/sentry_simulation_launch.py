@@ -147,13 +147,13 @@ def generate_launch_description():
         description='Full path to world model file to load')
 
     declare_robot_name_cmd = DeclareLaunchArgument(
-        'robot_name',
-        default_value='turtlebot3_waffle',
-        description='name of the robot')
+            'robot_name',
+            default_value='sentry_robot',
+            description='name of the robot')
 
     declare_robot_sdf_cmd = DeclareLaunchArgument(
         'robot_sdf',
-        default_value=os.path.join(bringup_dir, 'worlds', 'waffle.model'),
+        default_value=os.path.join(bringup_dir, 'worlds', 'sentry_robot.sdf'),
         description='Full path to robot sdf file to spawn the robot in gazebo')
 
     # Specify the actions
@@ -169,7 +169,7 @@ def generate_launch_description():
         cmd=['gzclient'],
         cwd=[launch_dir], output='screen')
 
-    urdf = os.path.join(bringup_dir, 'urdf', 'turtlebot3_waffle.urdf')
+    urdf = os.path.join(bringup_dir, 'urdf', 'sentry_robot.urdf')
     with open(urdf, 'r') as infp:
         robot_description = infp.read()
 
@@ -196,12 +196,12 @@ def generate_launch_description():
             '-R', pose['R'], '-P', pose['P'], '-Y', pose['Y']])
 
     rviz_cmd = IncludeLaunchDescription(
-        PythonLaunchDescriptionSource(
-            os.path.join(launch_dir, 'rviz_launch.py')),
-        condition=IfCondition(use_rviz),
-        launch_arguments={'namespace': namespace,
-                          'use_namespace': use_namespace,
-                          'rviz_config': rviz_config_file}.items())
+            PythonLaunchDescriptionSource(
+                os.path.join(launch_dir, 'rviz_launch.py')),
+            condition=IfCondition(use_rviz),
+            launch_arguments={'namespace': namespace,
+                            'use_namespace': use_namespace,
+                            'rviz_config': rviz_config_file}.items())
 
     bringup_cmd = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
