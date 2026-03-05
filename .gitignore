@@ -1,0 +1,10 @@
+# ignore nested environments
+app/nav2_ws/src/ws_livox/build/
+app/nav2_ws/src/ws_livox/install/
+app/nav2_ws/src/ws_livox/log/
+
+# Python compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
