@@ -152,7 +152,7 @@ This will publish essential topics: `/scan`, `/odom`, `/tf`, `/tf_static`, etc.
 In a new terminal (inside the container):
 
 ```bash
-ros2 launch nav2_bringup tb3_simulation_launch.py headless:=False
+ros2 launch nav2_bringup sentry_simulation_launch.py headless:=False
 ```
 
 Nav2 will now consume data from your real sensors instead of simulation.
