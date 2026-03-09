@@ -1,0 +1,123 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <model name="robomaster_arena_world">
+    <static>true</static> 
+    
+    <link name="robomaster_arena_world_link">
+      
+      <collision name="floor_collision">
+        <geometry>
+          <mesh>
+            <uri>model://robomaster_arena_world/meshes/Floor.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="floor_visual">
+        <geometry>
+          <mesh>
+            <uri>model://robomaster_arena_world/meshes/Floor.dae</uri>
+          </mesh>
+        </geometry>
+        <material><ambient>0.5 0.5 0.5 1</ambient></material> 
+      </visual>
+
+      <collision name="walls_collision">
+        <geometry>
+          <mesh>
+            <uri>model://robomaster_robomaster_arena_world_world/meshes/Inside_walls.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="walls_visual">
+        <geometry>
+          <mesh>
+            <uri>model://robomaster_arena_world/meshes/Inside_walls.dae</uri>
+          </mesh>
+        </geometry>
+        <material><ambient>0.2 0.2 0.2 1</ambient></material> 
+      </visual>
+
+      <collision name="ramps_collision">
+        <geometry>
+          <mesh>
+            <uri>model://robomaster_arena_world/meshes/Ramps.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="ramps_visual">
+        <geometry>
+          <mesh>
+            <uri>model://robomaster_arena_world/meshes/Ramps.dae</uri>
+          </mesh>
+        </geometry>
+        <material><ambient>0.8 0.8 0.8 1</ambient></material> 
+      </visual>
+
+      <collision name="bumps_collision">
+        <geometry>
+          <mesh>
+            <uri>model://robomaster_arena_world/meshes/Bumps.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="bumps_visual">
+        <geometry>
+          <mesh>
+            <uri>model://robomaster_arena_world/meshes/Bumps.dae</uri>
+          </mesh>
+        </geometry>
+        <material><ambient>0.1 0.1 0.1 1</ambient></material> 
+      </visual>
+
+      <collision name="bump_block_collision">
+        <geometry>
+          <mesh>
+            <uri>model://robomaster_arena_world/meshes/Bump_block.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="bump_block_visual">
+        <geometry>
+          <mesh>
+            <uri>model://robomaster_arena_world/meshes/Bump_block.dae</uri>
+          </mesh>
+        </geometry>
+        <material><ambient>0.9 0.9 0.9 1</ambient></material> 
+      </visual>
+
+      <visual name="green_center_visual">
+        <geometry>
+          <mesh>
+            <uri>model://robomaster_arena_world/meshes/Green_center.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0 1 0 1</ambient> <diffuse>0 0.8 0 1</diffuse>
+        </material>
+      </visual>
+
+      <visual name="red_zone_visual">
+        <geometry>
+          <mesh>
+            <uri>model://robomaster_arena_world/meshes/Red.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>1 0 0 1</ambient> <diffuse>0.8 0 0 1</diffuse>
+        </material>
+      </visual>
+
+      <visual name="blue_zone_visual">
+        <geometry>
+          <mesh>
+            <uri>model://robomaster_arena_world/meshes/Blue.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0 0 1 1</ambient> <diffuse>0 0 0.8 1</diffuse>
+        </material>
+      </visual>
+
+    </link>
+  </model>
+</sdf>
