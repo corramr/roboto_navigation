@@ -231,7 +231,7 @@
     </joint>
 
     <link name="lidar_link">
-      <pose relative_to="base_link">0 0 0.45 0 0 0</pose>
+      <pose relative_to="base_link">0 0 0.45 3.14159 0 0</pose>
       <inertial>
         <mass>0.5</mass>
         <inertia>
