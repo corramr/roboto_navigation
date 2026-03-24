@@ -21,12 +21,12 @@ def generate_launch_description():
                 'target_frame': 'base_scan',
                 'transform_tolerance': 0.01,
                 'min_height': 0.1,
-                'max_height': 0.7,
+                'max_height': 0.45,
                 'angle_min': -3.14159,    # -180 degrees
                 'angle_max': 3.14159,     # +180 degrees
                 'angle_increment': 0.004, #0.0087,  # 0.5 degrees
                 'scan_time': 0.1,  # NOT IMPO: just metadata info
-                'range_min': 0.1,
+                'range_min': 0.32,
                 'range_max': 10.0,
                 'inf_epsilon': 1.0,
                 'use_inf': True
