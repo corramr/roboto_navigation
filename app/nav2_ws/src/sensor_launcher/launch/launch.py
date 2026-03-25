@@ -49,7 +49,7 @@ def generate_launch_description():
     )
         
     return LaunchDescription([
-        # livox_driver,
+        livox_driver,
         pointcloud_converter,
         laserscan,
         odometry,

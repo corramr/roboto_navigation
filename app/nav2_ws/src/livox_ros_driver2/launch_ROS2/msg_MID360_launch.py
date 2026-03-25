@@ -13,7 +13,7 @@ lvx_file_path = '/home/livox/livox_test.lvx'
 cmdline_bd_code = 'livox0000000001'
 
 # Network configuration
-ethernet_interface = 'enx3c18a0255db5'
+ethernet_interface = 'enP8p1s0'
 host_ip = '192.168.1.5'
 
 cur_path = os.path.split(os.path.realpath(__file__))[0] + '/'
