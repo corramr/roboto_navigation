@@ -20,6 +20,7 @@ colcon build --parallel-workers 1 --packages-select livox_converter --symlink-in
 colcon build --parallel-workers 1 --packages-select pointcloud_to_laserscan --symlink-install
 colcon build --parallel-workers 1 --packages-select fast_lio --symlink-install
 colcon build --parallel-workers 1 --packages-select sensor_launcher --symlink-install
+colcon build --parallel-workers 1 --packages-select sentry_navigation --symlink-install
 colcon build \
     --symlink-install \
     --parallel-workers 1 \

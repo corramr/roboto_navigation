@@ -185,6 +185,7 @@ def generate_launch_description():
         remappings=remappings)
 
     start_gazebo_spawner_cmd = Node(
+        condition=IfCondition(use_simulator),
         package='gazebo_ros',
         executable='spawn_entity.py',
         output='screen',

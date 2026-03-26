@@ -10,7 +10,7 @@ def generate_launch_description():
             arguments=[
                 '--x', '0', '--y', '0', '--z', '0',
                 '--qx', '0', '--qy', '0', '--qz', '0', '--qw', '1',
-                '--frame-id', 'base_scan', '--child-frame-id', 'livox_frame'
+                '--frame-id', 'lidar_link', '--child-frame-id', 'livox_frame'
             ]
         ),
         Node(
@@ -18,7 +18,7 @@ def generate_launch_description():
             executable='pointcloud_to_laserscan_node',
             name='pointcloud_to_laserscan',
             parameters=[{
-                'target_frame': 'base_scan',
+                'target_frame': 'lidar_link',
                 'transform_tolerance': 0.01,
                 'min_height': 0.1,
                 'max_height': 0.45,

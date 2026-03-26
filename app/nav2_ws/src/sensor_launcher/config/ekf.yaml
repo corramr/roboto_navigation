@@ -1,0 +1,30 @@
+ekf_filter_node:
+  ros__parameters:
+    # 1. Base Settings
+    frequency: 50.0  # FAST_LIO runs fast, 20Hz is a good tracking speed
+    two_d_mode: true # Set to true since your Sentry is a ground robot with wheels. It ignores Z-drift.
+    publish_tf: true # This tells the EKF to publish the odom -> base_footprint transform
+
+    # 2. Frame Setup (Matching your URDF exactly)
+    map_frame: map
+    odom_frame: odom
+    base_link_frame: base_footprint # Root of your robot
+    world_frame: odom
+
+    # 3. Sensor Inputs
+    # Assuming FAST_LIO publishes to /Odometry
+    odom0: /fast_lio_odom
+
+    # 4. Sensor Configuration Matrix
+    # Order: [x, y, z, roll, pitch, yaw, vx, vy, vz, vroll, vpitch, vyaw, ax, ay, az]
+    # We trust the 3D position and orientation from FAST_LIO. 
+    # Because two_d_mode is true, the EKF will automatically ignore Z, Roll, and Pitch internally.
+    odom0_config: [true,  true,  true,
+                   true,  true,  true,
+                   false, false, false,
+                   false, false, false,
+                   false, false, false]
+
+    # Optional but recommended: 
+    # If FAST_LIO drops a frame, how many seconds should we keep trusting the last known velocity?
+    # odom0_differential: false

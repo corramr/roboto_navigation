@@ -6,7 +6,6 @@ cd /root/nav2_ws
 
 # build livox ros2 driver
 src/livox_ros_driver2/build.sh humble
-source install/setup.bash
 
 # install ros2 dep
 rosdep install --from-paths src --ignore-src -y
@@ -16,6 +15,7 @@ colcon build --parallel-workers 1 --packages-select livox_converter --symlink-in
 colcon build --parallel-workers 1 --packages-select pointcloud_to_laserscan --symlink-install
 colcon build --parallel-workers 1 --packages-select fast_lio --symlink-install
 colcon build --parallel-workers 1 --packages-select sensor_launcher --symlink-install
+colcon build --parallel-workers 1 --packages-select sentry_navigation --symlink-install
 colcon build --parallel-workers 1 --base-paths src/navigation2 --symlink-install
 
 # source environment
