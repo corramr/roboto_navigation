@@ -2,11 +2,31 @@
 apt-get update
 apt-get install -y ros-humble-pcl-ros ros-humble-pcl-conversions
 
-# go to workspace
+# go to dep workspace
+cd /root/deps_ws
+
+### TEMP: must be moved into the dockerfile
+# Clone perception_pcl (which contains pcl_ros and pcl_conversions) directly into src
+git clone https://github.com/ros-perception/perception_pcl.git --branch humble src/perception_pcl
+git clone https://github.com/ros-geographic-info/geographic_info.git --branch ros2 src/geographic_info
+git clone https://github.com/cra-ros-pkg/robot_localization.git --branch humble-devel src/robot_localization
+
+colcon build \
+  --parallel-workers 1 \
+  --packages-select geographic_msgs pcl_conversions pcl_ros robot_localization\
+  --symlink-install \
+  --cmake-args \
+    -DBUILD_TESTING=OFF \
+    -DAMENT_CMAKE_ENABLE_TESTING=OFF \
+    -DCMAKE_CXX_FLAGS="-Wl,--no-keep-memory"
+### /TEMP 
+
+# go to nav2 workspace
 cd /root/nav2_ws
 
 # source ros2 and deps workspace environment
 source /opt/ros/humble/install/setup.bash
+source /opt/ros/humble/setup.bash
 source /root/deps_ws/install/setup.bash
 
 # build livox ros2 driver
