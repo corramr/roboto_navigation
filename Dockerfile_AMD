@@ -43,7 +43,8 @@ RUN apt-get update && \
     apt install -y libpcl-dev && \
     apt install -y cmake && \
     apt install -y ros-humble-robot-localization && \
-    apt install -y chrony
+    apt install -y chrony && \
+    apt install -y python3-serial
 
 # install livox-sdk2
 RUN cd /root && \

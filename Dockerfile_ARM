@@ -64,7 +64,8 @@ RUN apt-get update && \
     apt-get install -y ros-humble-rqt-tf-tree && \
     apt-get install -y iproute2 net-tools && \
     apt install -y cmake && \
-    apt install -y chrony
+    apt install -y chrony && \
+    apt install -y python3-serial
 
 # install livox-sdk2
 RUN cd /root && \
