@@ -48,7 +48,7 @@ RX_STRUCT_FORMAT = '<' + ('f' * RX_NUM_VALUES)
 
 # Able or disable the 2 pipelines informations
 AI_PIPELINE  = True 
-NAV_PIPELINE = False
+NAV_PIPELINE = True
 
 
 

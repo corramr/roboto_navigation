@@ -68,5 +68,5 @@ def generate_launch_description():
         simulation_arg,
         nav2_group,   
         sensor_stack,
-        #cmd_vel_to_micro
+        cmd_vel_to_micro
     ])
