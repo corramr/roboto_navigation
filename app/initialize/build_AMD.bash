@@ -8,7 +8,7 @@ cd /root/nav2_ws
 src/livox_ros_driver2/build.sh humble
 
 # install ros2 dep
-rosdep install --from-paths src --ignore-src -y
+rosdep install --from-paths src --ignore-src -y  --skip-keys pyserial
 
 # build other ros2 packages
 colcon build --parallel-workers 1 --packages-select livox_converter --symlink-install

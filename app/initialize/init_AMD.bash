@@ -1,5 +1,4 @@
-source /opt/ros/humble/install/setup.bash
-source /root/deps_ws/install/setup.bash
+source /opt/ros/humble/setup.bash
 source /root/nav2_ws/install/setup.bash
     
 export TURTLEBOT3_MODEL=waffle  # Iron and older only with Gazebo Classic

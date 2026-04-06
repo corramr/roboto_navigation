@@ -38,13 +38,14 @@ RUN source /opt/ros/humble/setup.bash && \
       
 # install additional packages
 RUN apt-get update && \
-    apt-get install -y ros-humble-rqt-tf-tree && \
-    apt-get install -y iproute2 net-tools && \
-    apt install -y libpcl-dev && \
-    apt install -y cmake && \
-    apt install -y ros-humble-robot-localization && \
-    apt install -y chrony && \
-    apt install -y python3-serial
+    apt-get install -y ros-humble-rqt-tf-tree \
+                       ros-humble-pcl-ros \
+                       ros-humble-robot-localization \
+                       iproute2 net-tools \
+                       libpcl-dev \
+                       cmake \
+                       chrony \
+                       python3-serial
 
 # install livox-sdk2
 RUN cd /root && \
