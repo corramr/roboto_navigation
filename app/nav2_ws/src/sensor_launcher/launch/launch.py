@@ -20,7 +20,7 @@ def generate_launch_description():
         # Arguments: x, y, z, yaw, pitch, roll, frame_id, child_frame_id
         # Note: Euler angles (yaw, pitch, roll) are in radians.
         # Alternatively, you can use quaternions: x, y, z, qx, qy, qz, qw, frame_id, child_frame_id
-        arguments=['0.0', '0.0', '0.0', '0.0', '0.0', '0.0', 'base_footprint', 'base_link']
+        arguments=['0.0', '0.0', '0.06', '0.0', '0.0', '0.0', 'base_footprint', 'base_link']
     )
 
     static_tf_node_2 = Node(
@@ -31,7 +31,7 @@ def generate_launch_description():
         # Arguments: x, y, z, yaw, pitch, roll, frame_id, child_frame_id
         # Note: Euler angles (yaw, pitch, roll) are in radians.
         # Alternatively, you can use quaternions: x, y, z, qx, qy, qz, qw, frame_id, child_frame_id
-        arguments=['0.0', '0.0', '0.0', '0.0', '0.0', '0.0', 'base_link', 'lidar_link']
+        arguments=['0.0', '0.0', '0.45', '0.0', '3.14159', '0.0', 'base_link', 'lidar_link']
     )
 
     static_tf_node_3 = Node(
