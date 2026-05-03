@@ -21,8 +21,8 @@ ekf_filter_node:
     # Because two_d_mode is true, the EKF will automatically ignore Z, Roll, and Pitch internally.
     odom0_config: [true,  true,  true,
                    true,  true,  true,
-                   false, false, false,
-                   false, false, false,
+                   true, true, true,
+                   true, true, true,
                    false, false, false]
 
     # Optional but recommended: 
